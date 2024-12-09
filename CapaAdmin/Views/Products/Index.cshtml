@@ -1,0 +1,111 @@
+﻿@using Microsoft.AspNetCore.Html
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<Product>
+@{
+    int pageIndex = (int)ViewData["PageIndex"]!; 
+    int totalPages = (int)ViewData["TotalPages"]!;
+    string search = (string)ViewData["Search"]!;
+    string column = (string)ViewData["Column"]!;
+    string orderBy = (string)ViewData["OrderBy"]!;
+
+    HtmlString getArrow(string tableColum)
+    {
+        if (tableColum != column) return new HtmlString("");
+
+
+
+        if(orderBy == "desc")
+        {
+            return new HtmlString("<i class='bi bi-arrow-down'></i>");
+        } 
+        return new HtmlString("<i class='bi bi-arrow-up'></i");
+    }
+
+}
+
+<h2 class="text-center mb-5"> List of products</h2>
+
+<div class="row mb-5">
+     <div class="col">
+         <a class="btn btn-primary"  asp-controller="Products"  asp-action="Create"> New Products</a>
+
+     </div>
+    <div class="col">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" name="search" value="@search" placeholder="Search Name and Brand" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+</div>
+<script>
+    function sortTable(column) {
+    
+        let orderby = "desc";
+        let currentColum = "@column";
+    let currentOrder = "@orderBy";
+
+    if (column === currentColum) {
+        if (currentOrder == "asc") orderby = "desc";
+        else orderby = "asc";
+    }
+
+        window.location.href = "?search=@(search)&column=" + column + "&orderBy=" + orderby;
+    }
+</script>
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th style="cursor: pointer;" onclick="sortTable('Id')">ID @getArrow("Id")</th>
+            <th style="cursor: pointer;" onclick="sortTable('Name')">Name @getArrow("Name") </th>
+            <th style="cursor: pointer;" onclick="sortTable('Brand')">Brand  @getArrow("Brand") </th>
+            <th style="cursor: pointer;" onclick="sortTable('Category')">Category @getArrow("Category") </th>
+            <th style="cursor: pointer;" onclick="sortTable('Price')">Price @getArrow("Price") </th>
+            <th>Image</th>
+            <th style="cursor: pointer;" onclick="sortTable('CreatedAt')"> Created At @getArrow("CreatedAt")</th>
+            <th>Action</th>
+        </tr>
+        
+    </thead>
+     <tbody>
+    @foreach( var product in Model)
+    {
+            <tr>
+
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Brand</td>
+                <td>@product.Category</td>
+                <td>@(product.Price)</td>
+                <td><img src="/img/@product.ImageFileName" width="100"/></td>
+                <td>@product.CreatedAt.ToString("MM/dd/yyyy") </td>
+   
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-controller="Products" asp-action="Edit" asp-route-id="@product.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')" asp-controller="Products" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+
+                </td>
+            </tr>
+            
+      }
+
+    </tbody>
+
+</table>
+
+<nav >
+    <ul class="pagination">
+        @for( int i=1; i <= totalPages; i++)
+        {
+            string active = "";
+            if (i == pageIndex)  active = "active";
+            <li class="page-item @active"><a class="page-link" asp-route-pageIndex="@i"
+                   asp-route-search="@search" asp-route-column="@column" asp-route-orderBy="@orderBy">@i</a>
+             </li>
+        }
+    </ul>
+</nav>
+
