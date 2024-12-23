@@ -11,6 +11,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head> 
 <body>
+    <script>
+        function getShoppingCar() {
+            const cookeName = "shoppin_cart";
+            let cookesArray = document.cookie.split(';');
+
+            for (let i = 0; i < cookesArray.length; i++) {
+                let cookie = cookesArray[i];
+
+                if (cookie.includes(cookieName)) {
+                    let cookies_value = cookie.substring(cookie.indexOf("=") + 1);
+
+
+                    try {
+                        let cart = JSON.parse(cookies_value);
+                        return cart;
+
+                    } catch {
+                        break;
+                    }
+
+
+                }
+
+            }
+            return {};
+        }
+        function saveCart(cart) {
+            let cartStr = JSON.stringify(cart);
+            let d = new Date();
+            d.setDate(d.getDate() + 365);
+            let expires = d.toUTCString();
+            document.cookie = "shoppin_cart=" + cartStr + ";path=/; SameSite=Strict; Secure";
+        }
+
+
+
+    </script>
+        
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
             <div class="container">
@@ -36,9 +74,9 @@
                     </ul>
                     <ul class="navbar-nav me-2">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">
                                 <i class="bi bi-cart4 text-danger h3"></i> 
-                                <span id="CartSize" class="badge bg-danger" style="vertical-align:top">0</span>                          <span id="CartSize" class="badge bg-danger" style="vertical-align:top">0</span>
+                                <span id="CartSize" class="badge bg-danger" style="vertical-align:top">0</span>  
 
                             </a>
                         </li>
