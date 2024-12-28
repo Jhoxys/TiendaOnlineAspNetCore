@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CapaAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f41c894f98758fd98b017bdc16583d27d7a71d97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4a909c7e6e507a3ba0a4b2c6a06ead273399c22")]
 [assembly: System.Reflection.AssemblyProductAttribute("CapaAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CapaAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

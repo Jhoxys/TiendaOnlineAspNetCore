@@ -12,8 +12,8 @@
 </head> 
 <body>
     <script>
-        function getShoppingCar() {
-            const cookeName = "shoppin_cart";
+        function getShoppingCart() {
+            const cookieName = "shoppin_cart";
             let cookesArray = document.cookie.split(';');
 
             for (let i = 0; i < cookesArray.length; i++) {
@@ -42,10 +42,32 @@
             let d = new Date();
             d.setDate(d.getDate() + 365);
             let expires = d.toUTCString();
-            document.cookie = "shoppin_cart=" + cartStr + ";path=/; SameSite=Strict; Secure";
+            document.cookie = "shoppin_cart=" + cartStr +";expires="+expires+ ";path=/; SameSite=Strict; Secure";
         }
 
+        function addToCarts(button, id) {
+            let cart = getShoppingCart();
 
+            let quantity= cart[id];
+
+            if (isNaN(quantity)) {
+
+                cart[id] = 1;
+            } else {
+                cart[id] = Number(quantity)+1;
+            }
+            saveCart(cart);
+            button.innerHTML = "Added  <i class='bi bi-check-lg'></i>";
+
+            let cartSize = 0;
+            for (var cartItem of Object.entries(cart)) {
+                quantity = cartItem[1];
+                if (isNaN(quantity)) continue;
+                cartSize += Number(quantity)
+            }
+
+            document.getElementById("CartSize").innerHTML = cartSize;
+        }
 
     </script>
         
