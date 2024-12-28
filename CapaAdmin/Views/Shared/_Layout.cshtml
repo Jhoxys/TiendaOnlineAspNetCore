@@ -12,8 +12,8 @@
 </head> 
 <body>
     <script>
-        function getShoppingCar() {
-            const cookeName = "shoppin_cart";
+        function getShoppingCart() {
+            const cookieName = "shoppin_cart";
             let cookesArray = document.cookie.split(';');
 
             for (let i = 0; i < cookesArray.length; i++) {
@@ -24,7 +24,7 @@
 
 
                     try {
-                        let cart = JSON.parse(cookies_value);
+                        let cart = JSON.parse(atob(cookies_value));
                         return cart;
 
                     } catch {
@@ -38,14 +38,36 @@
             return {};
         }
         function saveCart(cart) {
-            let cartStr = JSON.stringify(cart);
+            let cartStr = btoa(JSON.stringify(cart));
             let d = new Date();
             d.setDate(d.getDate() + 365);
             let expires = d.toUTCString();
-            document.cookie = "shoppin_cart=" + cartStr + ";path=/; SameSite=Strict; Secure";
+            document.cookie = "shoppin_cart=" + cartStr +";expires="+expires+ ";path=/; SameSite=Strict; Secure";
         }
 
+        function addToCarts(button, id) {
+            let cart = getShoppingCart();
 
+            let quantity= cart[id];
+
+            if (isNaN(quantity)) {
+
+                cart[id] = 1;
+            } else {
+                cart[id] = Number(quantity)+1;
+            }
+            saveCart(cart);
+            button.innerHTML = "Added  <i class='bi bi-check-lg'></i>";
+
+            let cartSize = 0;
+            for (var cartItem of Object.entries(cart)) {
+                quantity = cartItem[1];
+                if (isNaN(quantity)) continue;
+                cartSize += Number(quantity)
+            }
+
+            document.getElementById("CartSize").innerHTML = cartSize;
+        }
 
     </script>
         
@@ -72,11 +94,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
+                    @using CapaAdmin.Service
                     <ul class="navbar-nav me-2">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">
                                 <i class="bi bi-cart4 text-danger h3"></i> 
-                                <span id="CartSize" class="badge bg-danger" style="vertical-align:top">0</span>  
+                                <span id="CartSize" class="badge bg-danger" style="vertical-align:top">
+
+                                    @CartHelper.GetCartSize(Context.Request,Context.Response)
+                                 
+                             
+                             </span>  
 
                             </a>
                         </li>
