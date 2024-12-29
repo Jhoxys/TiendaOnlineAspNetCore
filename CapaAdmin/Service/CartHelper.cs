@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using CapaAdmin.Models;
+using System.Text.Json;
 
 namespace CapaAdmin.Service
 {
@@ -50,7 +51,33 @@ namespace CapaAdmin.Service
 
         }
 
+        public static List<OrderItem> GetCartItems(HttpRequest request, HttpResponse response, ApplicationDbContext context)
+        {
+           var cartItems = new List<OrderItem>();
+            var cartDicionary = GetCartDiccionary(request, response);
+
+            foreach (var Keys in cartDicionary) {
+                int productId = Keys.Key;
+                int quiantity= Keys.Value;
+                var product = context.Products.Find(productId);// desde la base de datos obtener el producto
+
+                if (product != null)  continue;
+                   
+               var item = new OrderItem
+               {
+                 Quantity = quiantity,
+                 UnitPrice = product.Price,
+                 Product=  product,
+
+               };
+
+                cartItems.Add(item);
+      
+
+            }
 
 
+            return cartItems;
+        }
     }
 }
