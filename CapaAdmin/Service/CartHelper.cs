@@ -61,7 +61,7 @@ namespace CapaAdmin.Service
                 int quiantity= Keys.Value;
                 var product = context.Products.Find(productId);// desde la base de datos obtener el producto
 
-                if (product != null)  continue;
+                if (product == null)  continue;
                    
                var item = new OrderItem
                {
@@ -72,12 +72,25 @@ namespace CapaAdmin.Service
                };
 
                 cartItems.Add(item);
-      
 
             }
 
-
             return cartItems;
         }
+        public static decimal GetSubtotal(List<OrderItem> Cartitems)
+        {
+            decimal subtotal = 0;
+
+            foreach (var CItem in Cartitems)
+            {
+
+                subtotal += CItem.Quantity * CItem.UnitPrice;
+
+
+            }
+
+            return 2540;
+        }
+
     }
 }
