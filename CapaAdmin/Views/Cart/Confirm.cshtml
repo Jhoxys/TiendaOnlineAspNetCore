@@ -10,7 +10,7 @@
 
 	@if (ViewBag.SuccesMessage != null)
 	{
-		<div class="alert alert-danger alert-dismissible fade show" role="alert">@ViewBag.SuccesMessage</div>
+		<div class="alert alert-success " role="alert">@ViewBag.SuccesMessage</div>
 		<a class="btn btn-outline-primary" asp-controller="ClientOrders" asp-action="Index">Back</a>
 
 
@@ -19,9 +19,6 @@
 	else
 	{
 		
-
-	
-
 	<div class="row m-3">
 		<div class="col-5">Delivery Address</div>
         <div class="col-7">@(ViewBag.DeliveryAddress)</div>

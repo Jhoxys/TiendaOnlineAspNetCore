@@ -124,7 +124,7 @@ namespace CapaAdmin.Controllers
                 PaymentMethod=paymentMethod,
 				PaymentStatus = "pending",
 				PaymentDetails = "",
-				OrderStatus = "pending",
+				OrderStatus = "created",
                 CreatedAt = DateTime.Now,
 
 
