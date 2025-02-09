@@ -54,19 +54,72 @@
 
                 cart[id] = 1;
             } else {
-                cart[id] = Number(quantity)+1;
+                cart[id] = Number( )+1;
             }
             saveCart(cart);
             button.innerHTML = "Added  <i class='bi bi-check-lg'></i>";
 
             let cartSize = 0;
-            for (var cartItem of Object.entries(cart)) {
+            for (var cartItem of Object.entries(cart)) { // object.entries combierte a clave valor el objeto
                 quantity = cartItem[1];
                 if (isNaN(quantity)) continue;
                 cartSize += Number(quantity)
             }
 
             document.getElementById("CartSize").innerHTML = cartSize;
+        }
+
+
+        function increase(id) {
+            let cart = getShoppingCart();
+
+            let quantity = cart[id];
+
+            if (isNaN(quantity)) {
+
+                cart[id] = 1;
+            } else {
+                cart[id] = Number(quantity) + 1;
+            }
+            saveCart(cart);
+            location.reload();
+        }
+
+        function decrease(id) {
+            let cart = getShoppingCart();
+
+            let quantity = cart[id];
+
+            if (isNaN(quantity)) {
+
+                return
+            }
+
+            quantity= Number(quantity);
+            
+            if (quantity >1) { 
+
+
+                cart[id] = Number(quantity) - 1;
+
+                saveCart(cart);
+                location.reload();
+
+            }
+
+
+        }
+        function remove(id) {
+             let cart = getShoppingCart();
+
+            if (cart[id]) {
+
+                delete cart[id];
+                saveCart(cart);
+                location.reload();
+
+            }
+        
         }
 
     </script>
