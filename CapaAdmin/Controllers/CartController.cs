@@ -117,7 +117,7 @@ namespace CapaAdmin.Controllers
              {  return RedirectToAction("Index", "Home");}
 			var oder = new Order
 			{
-			    ClienteId= appUser.Id,
+			    ClientId= appUser.Id,
                 Items = cartItems,
                 ShippingFree=shippingFee,
                 DeliveryAddres=deliveryAddress,

@@ -1,0 +1,101 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h3 class="text-center mb-4"> List of Orders</h3>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Client</th>
+            <th>Units</th>
+            <th>Total</th>
+            <th>Payment Method</th>
+            <th>Payment Status</th>
+            <th>Order Status </th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Order Orders in ViewBag.Orders)
+        {
+            int count = 0; 
+            decimal total = Orders.ShippingFree;
+            foreach (OrderItem item in Orders.Items)
+            {
+                count += item.Quantity;
+                total += item.Quantity * item.UnitPrice;
+            }
+
+            string OrderStatus = "text-bg-danger";
+            string PaymentStatus = "text-bg-danger";
+
+            if (Orders.PaymentStatus =="pending")
+            {
+                PaymentStatus = "bg-warning  text-dark ";
+            }
+            else if (Orders.PaymentStatus == "accepted")
+            {
+                PaymentStatus = "text-bg-success";
+            }
+            else if (Orders.PaymentStatus == "secundary")
+            {
+                PaymentStatus = "text-bg-success";
+            }
+            //*****************
+            if (Orders.OrderStatus == "created")
+            {
+                OrderStatus = "bg-warning text-dark";
+            }
+            else if (Orders.OrderStatus == "accepted")
+            {
+                OrderStatus = "bg-success";
+            }
+            else if (Orders.OrderStatus == "canceled")
+            {
+                OrderStatus = "bg-secondary";
+            }
+            else if (Orders.OrderStatus == "delivered")
+            {
+                OrderStatus = "bg-success";
+            }
+            else if (Orders.OrderStatus == "returned")
+            {
+                OrderStatus = "bg-info  text-dark";
+            }
+
+            <tr>
+                <td>@Orders.Id</td>
+                <td>@(Orders.Client.FirstName + " " + Orders.Client.LastName)</td>
+                <td>@count</td>
+                <td>@(total)$</td>
+                <td>@Orders.PaymentMethod</td>
+                <td>
+                    <span class="badge rounded-pill @PaymentStatus">
+                        @Orders.PaymentStatus
+                    </span>
+    
+                </td>
+                <td>
+                    <span class="badge rounded-pill @OrderStatus">@Orders.OrderStatus</span>
+                </td>
+                <td>@Orders.CreatedAt.ToString("MM/dd/yyyy") </td>
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-controller="AdminOrders" asp-action="Details" asp-route-id="@Orders.Id">Details</a>
+
+                    @* <a class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')" asp-controller="Products" asp-action="Delete" asp-route-id="@product.Id">Delete</a> *@
+
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
