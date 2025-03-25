@@ -5,6 +5,1290 @@
       "PackagePath": "staticwebassets\\CapaAdmin.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\material-dashboard.css",
+      "PackagePath": "staticwebassets\\assets\\css\\material-dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\material-dashboard.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\material-dashboard.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\material-dashboard.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\material-dashboard.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\nucleo-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nucleo-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\nucleo-svg.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nucleo-svg.css"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo-icons.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo-icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo-icons.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo-icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo-icons.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo-icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo.woff"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\fonts\\nucleo.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\nucleo.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\apple-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\apple-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\bg-pricing.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-pricing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\bg-smart-home-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-smart-home-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\bg-smart-home-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-smart-home-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\bruce-mars.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bruce-mars.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\down-arrow-dark.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\down-arrow-dark.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\down-arrow-white.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\down-arrow-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\down-arrow.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\down-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\drake.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\drake.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\home-decor-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-decor-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\home-decor-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-decor-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\home-decor-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\home-decor-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\icons\\flags\\AU.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\AU.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\icons\\flags\\BR.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\BR.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\icons\\flags\\DE.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\DE.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\icons\\flags\\GB.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\GB.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\icons\\flags\\US.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\flags\\US.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\chat.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\chat.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\danger-chat-ill.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\danger-chat-ill.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\dark-lock-ill.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\dark-lock-ill.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\error-404.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\error-404.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\error-500.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\error-500.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\illustration-lock.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\illustration-lock.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\illustration-reset.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\illustration-reset.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\illustration-signin.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\illustration-signin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\illustration-signup.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\illustration-signup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\illustration-verification.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\illustration-verification.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\lock.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\lock.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\pattern-tree.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\pattern-tree.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\illustrations\\rocket-white.png",
+      "PackagePath": "staticwebassets\\assets\\img\\illustrations\\rocket-white.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\ivana-square.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ivana-square.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\ivana-squares.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ivana-squares.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\ivancik.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\ivancik.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\kal-visuals-square.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\kal-visuals-square.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logo-ct-dark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-ct-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logo-ct.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-ct.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-coinbase.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-coinbase.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-nasa.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-nasa.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-netflix.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-netflix.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-pinterest.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-pinterest.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-spotify.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-spotify.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\gray-logos\\logo-vodafone.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\gray-logos\\logo-vodafone.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\mastercard.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\logos\\visa.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\marie.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\marie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\meeting.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\meeting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\office-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\office-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\product-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-1-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-1-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-2-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-2-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-3-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-3-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-4-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-4-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-5-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-5-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-6-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-6-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-7-min.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-7-min.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-details-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-details-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-details-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-details-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-details-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-details-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\products\\product-details-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\product-details-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\shapes\\pattern-lines.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\shapes\\pattern-lines.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\shapes\\waves-white.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\shapes\\waves-white.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\bootstrap.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\bootstrap.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\creative-tim.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\creative-tim.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\devto.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\devto.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\github.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\github.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\google-webdev.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\google-webdev.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\icon-bulb.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\icon-bulb.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\icon-sun-cloud.png",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\icon-sun-cloud.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-asana.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-asana.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-atlassian.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-atlassian.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-invision.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-invision.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-jira.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-jira.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-slack.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-slack.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-spotify.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-spotify.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\small-logos\\logo-xd.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\small-logos\\logo-xd.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\team-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\tesla-model-s.png",
+      "PackagePath": "staticwebassets\\assets\\img\\tesla-model-s.png"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\img\\vr-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\vr-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\core\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\core\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\core\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\core\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\material-dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\material-dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\material-dashboard.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\material-dashboard.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\material-dashboard.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\material-dashboard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\Chart.extension.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\Chart.extension.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\bootstrap-notify.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\bootstrap-notify.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\chartjs.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\chartjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\smooth-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\smooth-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\js\\plugins\\world.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\world.js"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_accordion.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_alert.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_avatars.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_avatars.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_backgrounds.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_backgrounds.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_badge.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_breadcrumbs.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_breadcrumbs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_cards-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_cards-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_cards.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_components.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_components.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_dark-version.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_dark-version.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_dropdown-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_dropdown-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_dropup.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_dropup.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_floating-elements.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_floating-elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_forms.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_gradients.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_icons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_info-areas.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_info-areas.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_list-check.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_list-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_misc-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_misc-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_misc.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_nav.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_navbar-vertical.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_navbar-vertical.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_navbar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_pagination.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_popovers.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_popovers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_progress.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_ripple.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_ripple.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_rtl-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_rtl-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_rtl.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_tables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_tilt.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_tilt.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_timeline.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_tooltips.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_tooltips.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_typography.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_utilities-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_utilities-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_utilities.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\badges\\_badge-circle.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\badges\\_badge-circle.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\badges\\_badge-dot.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\badges\\_badge-dot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\badges\\_badge-floating.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\badges\\_badge-floating.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\badges\\_badge.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\badges\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_accordion.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_containers.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_helpers.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_placeholders.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_placeholders.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stacks.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stacks.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_vr.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\helpers\\_vr.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_backdrop.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_backdrop.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-background.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-background.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-horizontal.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-horizontal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-pricing.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-pricing.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-profile.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-profile.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\cards\\card-rotate.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\cards\\card-rotate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\custom\\_styles.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\custom\\_styles.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\custom\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\custom\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_form-switch.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_form-switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_forms.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_inputs.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_inputs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_colored-shadows.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_colored-shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\_vendor.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\_vendor.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\mixins\\mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\mixins\\mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\free\\_flatpickr.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\free\\_flatpickr.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\free\\_nouislider.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\free\\_nouislider.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\free\\_perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\free\\_perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\free\\_prism.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\free\\_prism.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\free\\plugins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\free\\plugins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_carousel-slick.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_carousel-slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_choices.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_choices.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_datatable-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_datatable-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_datatable.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_datatable.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_dragula.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_dragula.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_dropzone.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_dropzone.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_fullcalendar-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_fullcalendar-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_fullcalendar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_fullcalendar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_glidejs.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_glidejs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_highlight.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_highlight.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_kanban.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_kanban.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_leaflet.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_leaflet.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_list-check.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_list-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_photoswipe.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_photoswipe.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_quill.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_quill.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_rating-widget.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_rating-widget.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_sweetalert2-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_sweetalert2-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_sweetalert2.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_sweetalert2.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\_vector-map.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\_vector-map.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\multi-step.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\multi-step.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\plugins\\pro\\plugins-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\plugins\\pro\\plugins-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\theme-pro.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\theme-pro.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\theme.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_animations.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_animations.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_avatars.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_avatars.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_badge.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_cards-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_cards-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_cards.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_cards.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_choices.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_choices.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_dark-version.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_dark-version.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_dropdowns.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_dropdowns.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_form-switch.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_form-switch.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_full-calendar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_full-calendar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_info-areas.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_info-areas.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_misc-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_misc-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_misc.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_navbar-vertical.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_navbar-vertical.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_navbar.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_pagination.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_ripple.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_ripple.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_rtl.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_social-buttons.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_social-buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_table.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_table.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_timeline.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_timeline.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_utilities-extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_utilities-extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_utilities.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\scss\\material-dashboard\\variables\\_virtual-reality.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard\\variables\\_virtual-reality.scss"
+    },
+    {
       "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

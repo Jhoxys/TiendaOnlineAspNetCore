@@ -1,0 +1,286 @@
+﻿
+@model Order
+
+@{
+
+	string OrderStatus = "text-bg-danger";
+	string PaymentStatusColor = "text-bg-danger";
+
+	if (Model.PaymentStatus == "pending")
+	{
+		PaymentStatusColor = "bg-warning text-dark ";
+	}
+	else if (Model.PaymentStatus == "accepted")
+	{
+		PaymentStatusColor = "bg-success";
+	}
+	else if (Model.PaymentStatus == "canceled")
+	{
+		PaymentStatusColor = "bg-secondary";
+	}
+	//*****************
+	if (Model.OrderStatus == "created")
+	{
+		OrderStatus = "bg-warning text-dark";
+	}
+	else if (Model.OrderStatus == "accepted")
+	{
+		OrderStatus = "bg-success";
+	}
+	else if (Model.OrderStatus == "canceled")
+	{
+		OrderStatus = "bg-secondary";
+	}
+	else if (Model.OrderStatus == "delivered")
+	{
+		OrderStatus = "bg-success";
+	}
+	else if (Model.OrderStatus == "returned")
+	{
+		OrderStatus = "bg-info  text-dark";
+	}
+	else if (Model.OrderStatus == "deleted")
+	{
+		OrderStatus = "bg-danger  text-dark";
+	}
+}
+
+<h3 class="text-center mb-4">Order Details</h3>
+
+<a style="text-decoration:none" class="btn btn-link" asp-controller="AdminOrders" asp-action="Index">Orders</a>
+
+<div class="row mb-4">
+
+	<div class="col-lg-6">
+		<div class="border rounded py-3 px-4  h-100">
+			<h3 class="mb-3">Orders</h3>
+
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Order ID</div>
+				<div class="col">@Model.Id</div>
+			</div>
+
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Delivery adress</div>
+				<div class="col">@Model.DeliveryAddres</div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Payment Method</div>
+				<div class="col">@Model.PaymentMethod</div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Paymen Status</div>
+				<div class="col">
+					<span class="badge rounded-pill @PaymentStatusColor">@Model.PaymentStatus</span>
+					<a href="#" class="mx-2" data-bs-toggle="modal" data-bs-target="#paymenStatusModal">
+						Edit
+					</a>
+					<a href="#" data-bs-toggle="modal" data-bs-target="#paymentDetailsModal">
+						Details
+					</a>
+			
+				</div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Order Status</div>
+				<div class="col">
+					<span class="badge rounded-pill @OrderStatus">@Model.OrderStatus</span>
+					<!-- Button trigger modal -->
+					<a href="#" class="ms-2" data-bs-toggle="modal" data-bs-target="#orderStatusModal">
+						Edit
+					</a>
+				</div>
+
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Order Date</div>
+				<div class="col">@Model.CreatedAt</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-lg-6">
+		<div class="border rounded py-3 px-4  h-100">
+			<h3 class="mb-3">Client</h3>
+
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Nombre</div>
+				<div class="col">
+					<a class="btn btn-link" asp-controller="Users" asp-action="Details" asp-route-id="@Model.Client.Id">@(Model.Client.FirstName + "  " + Model.Client.LastName)</a>
+				</div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">N° Orders</div>
+				<div class="col"> @ViewBag.NumOrders </div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Email</div>
+				<div class="col"> @Model.Client.Email </div>
+			</div>
+
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Phone</div>
+				<div class="col"> @Model.Client.PhoneNumber </div>
+			</div>
+
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Address</div>
+				<div class="col"> @Model.Client.Address</div>
+			</div>
+			<div class="row mb-2 pb-2 border-bottom">
+				<div class="col">Registered at</div>
+				<div class="col"> @Model.Client.CreatedAt</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th style="width: 100px">Description</th>
+			<th></th>
+			<th style="width: 100px">Units</th>
+			<th style="width: 100px">Aoumount</th>
+		</tr>
+	</thead>
+	<tbody>
+		@{
+			decimal subtotal = 0;
+			foreach (var item in Model.Items)
+			{
+				subtotal += item.UnitPrice * item.Quantity;
+				<tr>
+					<td> <img src="/img/@item.Product.ImageFileName" width="100" alt="@item.Product.ImageFileName" /></td>
+					<td>
+						<h4>
+							<a style="text-decoration:none; color: inherit;"
+							   asp-controller="Store" asp-action="Details" asp-route-id="@item.Product.Id">
+								@item.Product.Name
+							</a>
+						</h4>
+						@item.Product.Category<br />
+						@(item.UnitPrice)$
+					</td>
+					<td>@item.Quantity</td>
+					<td>@(item.UnitPrice + item.Quantity)$</td>
+
+				</tr>
+			}
+
+		}
+	</tbody>
+</table>
+
+<div class="ms-auto mb-3" style="width:250px">
+
+	<div class="row">
+		<div class="col fw-bold">Subtotal:</div>
+		<div class="col text-end">@(subtotal)$</div>
+	</div>
+	<div class="row">
+		<div class="col fw-bold">Shippin Fee:</div>
+		<div class="col text-end">@(Model.ShippingFree)$</div>
+	</div>
+	<div class="row">
+		<div class="col fw-bold">Total:</div>
+		<div class="col text-end">@(Model.ShippingFree * subtotal)$</div>
+	</div>
+</div>
+
+
+<!-- Button trigger modal -->
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="paymenStatusModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5">Payment Status</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form method="get" asp-controller="AdminOrders" asp-action="Edit">
+					<input type="hidden" name="id" value="@Model.Id" />
+					<label>Payment Status</label>
+					<select class="form-select mb-2" name="payment_status" asp-for="PaymentStatus">
+						<option value="pending">pending</option>
+						<option value="accepted">accepted</option>
+						<option value="canceled">canceled</option>
+					</select>
+					<button type="submit" class="btn btn-outline-primary">Enviar</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="orderStatusModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5">Udapte order State</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form method="get" asp-controller="AdminOrders" asp-action="Edit">
+					<input type="hidden" name="id" value="@Model.Id" />
+					<label>Order Status</label>
+					<select class="form-select mb-2" name="order_status" asp-for="OrderStatus">
+						<option value="created">created</option>
+						<option value="accepted">accepted</option>
+						<option value="canceled">canceled</option>
+						<option value="shipped">shipped</option>
+						<option value="delivered">delivered</option>
+						<option value="returnerd">returned</option>
+						<option value="deleted">deleted</option>
+					</select>
+					<button type="submit" class="btn btn-outline-primary">Enviar</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="paymentDetailsModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5">Payment Details</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+
+				<p>@Model.PaymentDetails</p>
+				@* <form method="get" asp-asp-controller="AdminOrders" asp-action="Edit">
+						<input type="hidden" name="id" value="@Model.Id" />
+						<label>Payment Status</label>
+						<select class="form-select mb-2" name="payment_status" asp-for="PaymentStatus">
+							<option value="pending">pending</option>
+							<option value="acceted">accepted</option>
+							<option value="canceld">canceled</option>
+						</select>
+						<button type="submit" class="btn btn-outline-primary">Enviar</button>
+					</form> *@
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

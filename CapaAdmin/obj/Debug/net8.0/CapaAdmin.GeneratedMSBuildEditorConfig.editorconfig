@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Accounting/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudGluZ1xCaWxsaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Accounting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/AdminOrders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5PcmRlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/AdminOrders/Index.cshtml]
@@ -76,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Shared/_LayaoutInventary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlhb3V0SW52ZW50YXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jhoxys/source/repos/CursoMVC2/CapaAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
