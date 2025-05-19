@@ -2,9 +2,7 @@ using CapaAdmin.Models;
 using CapaAdmin.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using sib_api_v3_sdk.Client;
-using System.Net;
-using System.Reflection.PortableExecutable;
+
 
 internal class Program
 {

@@ -1,11 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace CapaAdmin.Models
 {
     public class BillingDto
     {
-
+       // [Required(ErrorMessage = "The Last Name field is required"), MaxLength(100)
         [Required, MaxLength(100)]
         public string Name { get; set; } = "";
 
