@@ -1,7 +1,9 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@model BillingDto
+@model FacturaDto
+
+
 @{
     Layout = "_LayaoutInventary";
 
@@ -259,7 +261,7 @@ function eliminarFila(boton) {
                                     <th scope="row">1</th>
                                
                                     <td><input class="form-control" placeholder="Description" asp-for="Description"/> </td>
-                                    <td><input class="form-control" placeholder="Quantity" onchange="CambCantidad()" asp-for="Quantitys"  required/></td>
+                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto.Quantitys" required /></td>
                                     <td><input class="form-control" placeholder="Price" onchange="CambCantidad()" asp-for="Price" required /></td>
                                     <td><input class="form-control" placeholder="Amount"  asp-for="amount" disabled /></td>
                                     <td>
