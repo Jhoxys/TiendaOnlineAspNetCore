@@ -18,14 +18,18 @@ namespace CapaAdmin.Models
 
 
         [Precision(16, 2)]
-        public decimal NoFactura { get; set; }
+        public string NoFactura { get; set; } = "";
 
         [Precision(16, 2)]
         public decimal Discount { get; set; }
 
+        [Precision(16, 2)]
+        public decimal Total { get; set; }
+
 
         public Product Product { get; set; } = new Product();
-        
+        public int ProductId { get; set; }
+
         public DateTime CreatedAt{ get; set; } 
 
     }

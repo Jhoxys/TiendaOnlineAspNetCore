@@ -2,6 +2,7 @@ using CapaAdmin.Models;
 using CapaAdmin.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using QuestPDF.Infrastructure;
 
 
 internal class Program
@@ -35,12 +36,13 @@ internal class Program
 		.AddDefaultTokenProviders(); // token usado en la action  forgot password
 
 
+        QuestPDF.Settings.License = LicenseType.Community;
 
 
-		//Configuration.Default.ApiKey.Add("api-key", builder.Configuration["EmailSettings:Apikey"]);
+        //Configuration.Default.ApiKey.Add("api-key", builder.Configuration["EmailSettings:Apikey"]);
 
 
-		var app = builder.Build();
+        var app = builder.Build();
 
 		// Configure the HTTP request pipeline.
 		if (!app.Environment.IsDevelopment())

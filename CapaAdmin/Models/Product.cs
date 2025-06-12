@@ -20,6 +20,13 @@ namespace CapaAdmin.Models
         [Precision(16,2)]
         public decimal Price { get; set; }
 
+        [Precision(16, 2)]
+        public decimal Stock { get; set; }
+
+
+        [Precision(16, 2)]
+        public decimal CodeProduct { get; set; }
+
         public string Description { get; set; } = "";
 
         [MaxLength(100)]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZOHtcRyojNc1U0+BC9qd6OUd5yj1I403VLOFDjJOTEs=",
+  "Hash": "tiN0SEbWZnVSPZ5m/81l161EZWViyeB1Lh0g4LCIHiY=",
   "Source": "CapaAdmin",
   "BasePath": "_content/CapaAdmin",
   "Mode": "Default",
@@ -6589,6 +6589,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\laptopata3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\img\\Logo proximab copy.jpg",
+      "SourceId": "CapaAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\",
+      "BasePath": "_content/CapaAdmin",
+      "RelativePath": "img/Logo proximab copy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Logo proximab copy.jpg"
     },
     {
       "Identity": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\img\\logot.jpg",

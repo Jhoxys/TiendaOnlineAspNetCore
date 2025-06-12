@@ -4,6 +4,7 @@ using CapaAdmin.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CapaAdmin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250604041408_CodepUpdat")]
+    partial class CodepUpdat
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -149,7 +152,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Billing", (string)null);
+                    b.ToTable("Billing");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Clients", b =>
@@ -186,7 +189,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Clients", (string)null);
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Inventory", b =>
@@ -242,7 +245,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Inventory", (string)null);
+                    b.ToTable("Inventory");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
@@ -288,7 +291,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.OrderItem", b =>
@@ -318,7 +321,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OderItems", (string)null);
+                    b.ToTable("OderItems");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Product", b =>
@@ -370,7 +373,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

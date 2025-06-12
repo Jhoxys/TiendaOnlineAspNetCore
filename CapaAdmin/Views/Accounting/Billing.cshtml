@@ -14,13 +14,16 @@
 
 }
 <script>
-
+    let index = 0;
     function Agregar() {
 
         console.log("gdagadsg");
 
             const tablaOriginal = document.getElementById("AddTr");
         const tablaNueva = document.getElementById("AddTr");
+       // const tbody = tablaOriginal.querySelector("#tablaDatos tbody");
+      
+        index++;
 
             // Tomamos la primera fila  para contar el articulo
             const filaOriginal = tablaOriginal.rows[1];
@@ -39,15 +42,22 @@
         const filaClonada = filaOriginal.cloneNode(true);
         filaOriginal.cells[0].textContent = parseFloat(filaClonada.cells[0].textContent) + 1;
 
+     
 
+      
         //const FQty = parseInt(filaClonada.cells[2].textContent);
         const FPrice = tablaOriginal.querySelector('input[name="Price"]');
-     
         const FPriceR = parseFloat(FPrice.value)
+
 
         const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
         const FQtyR = parseFloat(FQty.value);
 
+        const FDesc = tablaOriginal.querySelector('input[name="Description"]');
+        const FDesction = FDesc.value;
+
+        const Famount = tablaOriginal.querySelector('input[name="amount"]');
+        const Famountval = parseFloat(Famount.value);
 
         if (FQtyR > 0 && FPriceR > 0) {
 
@@ -58,9 +68,38 @@
 
 
             const inputs = filaClonada.querySelectorAll('input');
+
+
+
             inputs.forEach(input => input.disabled = true);
 
-            tablaNueva.appendChild(filaClonada);
+          
+            
+            const tbody = tablaOriginal.querySelector("#tablaDatos tbody");
+
+            const fila = document.createElement("tr");
+
+            fila.innerHTML = `
+
+                  <th scope="row">${index}</th>
+
+                                 <td><input class="form-control" name="BillingDto[${index}].Description" value="${FDesction}" readonly  /> </td>
+                                     <td><input class="form-control" name="BillingDto[${index}].Quantitys"  value="${FQtyR}"  readonly  /></td>
+                                 <td><input class="form-control" name="BillingDto[${index}].Price"  value="${FPriceR}"  readonly  /></td>
+                                <td><input class="form-control" id="ValAmount" name="BillingDto[${index}].amount"  value="${Famountval}" readonly  /></td>
+                         <td><button class="btn btn-danger text-capitalize active"  onclick="eliminarFila(this)">Eliminar</button></td>
+                                           <td>   <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="@ViewBag.ITBIS" />
+                                   <input name="BillingDto[${index}].NoFactura" value="@ViewBag.NoFactura" type="hidden" /></td>
+                                    
+                        `;
+           tablaNueva.appendChild(fila);
+
+          //  tablaNueva.appendChild(filaClonada);
+
+
+            // <td>   <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" />
+            //     <input name="BillingDto[${index}].NoFactura" value="${@ViewBag.NoFactura}" type="hidden" /></td>
+          
 
             CambCantidad();
         }
@@ -111,7 +150,7 @@ function eliminarFila(boton) {
         const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
         const FQtyR = parseFloat(FQty.value);
 
-
+       
           // aqui controlo que el campo no este vacio
         if (!isNaN(FQtyR)  && !isNaN(valor1)) {
 
@@ -119,7 +158,7 @@ function eliminarFila(boton) {
         let subTotalidad = 0;
         for (let i = 2; i < tablaOriginal.rows.length; i++) {
          
-                const input3 = tablaOriginal.rows[i].querySelector('input[name="amount"]');
+                const input3 = tablaOriginal.rows[i].querySelector('#ValAmount');
                 const valor3 = parseFloat(input3.value);
             subTotalidad += valor3;
           
@@ -131,16 +170,18 @@ function eliminarFila(boton) {
         li.innerHTML = '<span class="text-black me-4">SubTotal</span>$'+subTotalidad;
             const valorli = parseFloat(li.textContent.replace("SubTotal$", ""));
 
-
-            // imprimir ITEBIS total
-        const li1 = document.querySelector('#ITBTotal');
-        li1.innerHTML = '<span class="text-black me-4">ITB('+ @ViewBag.ITBIS+'%)</span>$' + subTotalidad * @ViewBag.ITBISCalculo;
+          //  const CalSubItb = subTotalidad * @ViewBag.ITBISCalculo;
+          //  imprimir ITEBIS total
+            const li1 = document.querySelector('#TotalITBS');
+            li1.innerHTML = '<span class="text-black me-4">ITB(' + @ViewBag.ITBIS+'%)</span>$' + subTotalidad * parseFloat('@ViewBag.ITBISCalculo');
             const valorli2 = parseFloat(li1.textContent.replace("ITB(" + @ViewBag.ITBIS+"%)$", ""));// busco el numero y remplazo lo que sobra
-      
 
-        // imprimir  amount total
+            const ITBTotal = document.querySelector('#TotalITBS');
+            ITBTotal.innerHTML = parseFloat(subTotalidad * '@ViewBag.ITBISCalculo');
+
+
+            // imprimir  amount total
             const li3 = document.querySelector('#AmountTotal');
-
             let sumaITB = valorli + valorli2;
             // comprobar si esta chek el itbis
             const checks= document.getElementById("red").checked;
@@ -151,11 +192,19 @@ function eliminarFila(boton) {
                 sumaITB = valorli;
             }
 
-            li3.innerHTML = '<span class="text-black me-4">Total Amount</span><span style="font-size: 25px;">$' + sumaITB + '</span>';
+            li3.innerHTML = '<span class="text-black me-4">Total Amount</span><span style="font-size: 25px;">$' + sumaITB + '</span> <input name = "BillingDto[' + index + '].Total" value = "' + sumaITB + '" type = "hidden" />';
+
        const valorli3 = parseFloat(li3.textContent);
 
+            const datotal = document.querySelector('#AmountTotalBase');
+            const datofinal= parseFloat(sumaITB);
+            datotal.value = datofinal;
 
-            // alert('Sub Total EEs: ' + valorli);
+         //  const ITBTotal = document.querySelector('#AmountTotal');
+           // const valorTotal = parseFloat(ITBTotal.textContent.replace("Total Amount$", ""));
+          //  ITBTotal.innerHTML = ' < input name = "BillingDto[${index}].Total" value = "${valorTotal}" type = "hidden" />';
+
+
 
 
         }
@@ -178,11 +227,15 @@ function eliminarFila(boton) {
             <div class="container mb-5 mt-3">
                 <div class="row d-flex align-items-baseline">
                     <div class="col-xl-9">
-                        <p style="color: #7e8d9f;font-size: 20px;">Invoice &gt;&gt; <strong>ID: #123-123</strong></p>
+                        <p style="color: #7e8d9f;font-size: 20px;">Invoice &gt;&gt; <strong>ID: #@ViewBag.NoFactura</strong></p>
                     </div>
                     <div class="col-xl-3 float-end">
-                        <a data-mdb-ripple-init="" class="btn btn-light text-capitalize border-0 ripple-surface-dark" data-mdb-ripple-color="dark" style=""><i class="fas fa-print text-primary"></i> Print</a>
-                        <a data-mdb-ripple-init="" class="btn btn-light text-capitalize ripple-surface-dark" data-mdb-ripple-color="dark" style=""><i class="far fa-file-pdf text-danger"></i> Export</a>
+                        <form asp-action="DescargarPDF" asp-controller="Accounting">
+                        <button data-mdb-ripple-init=""   class="btn btn-light text-capitalize border-0 ripple-surface-dark" data-mdb-ripple-color="dark" style=""><i class="fas fa-print text-primary"></i> Print</button>
+                            <button data-mdb-ripple-init="" type="submit" class="btn btn-light text-capitalize ripple-surface-dark" data-mdb-ripple-color="dark" style=""><i class="far fa-file-pdf text-danger"></i> Export</button>
+
+                    </form>
+                       
                     </div>
                     <hr>
                 </div>
@@ -196,13 +249,21 @@ function eliminarFila(boton) {
                         </div>
 
                     </div>
-                    @if (ViewBag.ErrorMassage != null)
+                        @if (ViewBag.ErrorMessage != null)
                     {
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>@ViewBag.ErrorMassage </strong>
+                                <strong>@ViewBag.ErrorMessage </strong>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     }
+                        @if (ViewBag.SuccessMessage != null)
+                        {
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>@ViewBag.SuccessMessage </strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+
                     @using Microsoft.AspNetCore.Identity
                     @inject SignInManager<ApplicationUser> SignInManager
                     @inject UserManager<ApplicationUser> UserManager
@@ -214,26 +275,34 @@ function eliminarFila(boton) {
                             {
                                 var appUser = await UserManager.GetUserAsync(User);
 
-                        <div class="col-xl-8">
-                            <ul class="list-unstyled">
+                                <div class="col-xl-8">
+                                    <ul class="list-unstyled">
                                     <li class="text-muted">Vendedor: <span style="color:#5d9fc5 ;"> @appUser.FirstName  @appUser.LastName </span></li>
                                         <li class="text-muted">@ViewBag.Street, @ViewBag.City</li>
                                         <li class="text-muted">@ViewBag.State, @ViewBag.Country</li>
                                     <li class="text-muted"><i class="fas fa-phone"></i> @ViewBag.Phone</li>
                             </ul>
                                     <label class="me-1 fw-bold">Name Client</label>
-                                    <input class="form-control" placeholder="Name Client" asp-for="Name"  required/>
+                                    <input class="form-control" placeholder="Name Client" asp-for="@ViewData["ClientsFirstName"]" required />
+                                    <span asp-validation-for="@ViewData["ClientsFirstName"]"></span>
+                                    <label class="me-1 fw-bold">Address</label>
+                                    <input class="form-control" placeholder="Adress" asp-for="@ViewData["ClientsFirstName"]" />
+                                    <label class="me-1 fw-bold">Phone</label>
+                                    <input class="form-control" placeholder="Phone" asp-for="@ViewData["ClientsFirstName"]" />
+                                    
                                     <br />
+
+
                                    
                         </div>
                             }
                         <div class="col-xl-4">
                             <p class="text-muted">Invoice</p>
                             <ul class="list-unstyled">
-                                <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">ID:</span>#123-456</li>
+                                    <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">ID:</span>#@ViewBag.NoFactura</li>
                                 <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">Creation Date: </span>Jun 23,2021</li>
                                 <li class="text-muted">
-                                    <i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="me-1 fw-bold">Status:</span><span class="badge bg-warning text-black fw-bold">
+                                    <i class="fas fa-circle" style="color:#84B0CA;"></i> <span class="me-1 fw-bold">Status:</span><span class="badge bg-warning text-black fw-bold">
                                         Unpaid
                                     </span>
                                 </li>
@@ -257,27 +326,31 @@ function eliminarFila(boton) {
                                 </tr>
                             </thead>
                             <tbody >
+                          
                                 <tr>
                                     <th scope="row">1</th>
+
+                                        <td><input class="form-control" name="Description" placeholder="Description" asp-for="BillingDto[0].Description" /> </td>
+                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" required /></td>
+                                        <td><input class="form-control" name="Price" placeholder="Price" onchange="CambCantidad()" asp-for="BillingDto[0].Price" required /></td>
+                                        <td><input class="form-control" id="ValAmount" name="amount" placeholder="Amount" asp-for="BillingDto[0].amount" disabled /></td>
+                                
                                
-                                    <td><input class="form-control" placeholder="Description" asp-for="Description"/> </td>
-                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto.Quantitys" required /></td>
-                                    <td><input class="form-control" placeholder="Price" onchange="CambCantidad()" asp-for="Price" required /></td>
-                                    <td><input class="form-control" placeholder="Amount"  asp-for="amount" disabled /></td>
                                     <td>
                                         <button type="button" onclick="Agregar()" class="btn btn-success text-capitalize active" aria-pressed="true">
                                             Agregar
                                         </button>
                                     </td>
                                   
-                                </tr>   
+                                </tr> 
+
+
+
+                             
                             </tbody>
                         </table>
                         <hr />
  
-                            <table id="tablaNueva">
-                             
-                            </table>
                          
 
                     </div>
@@ -316,10 +389,17 @@ function eliminarFila(boton) {
                             <p>Thank you for your purchase</p>
                         </div>
                         <div class="col-xl-2">
-                            <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" data-mdb-button-initialized="true" aria-pressed="true">
-                                Pay
-                                Now
-                            </button>
+                          
+                               <input name="BillingDto[0].ITB" id="TotalITBS" type="hidden" />
+                               <input name="BillingDto[0].NoFactura" value="0" type="hidden" />
+
+                                <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
+
+                                <button type="submit" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
+                                    Pay  
+                                    Now
+                                </button>
+
                         </div>
                     </div>
                          </form>        

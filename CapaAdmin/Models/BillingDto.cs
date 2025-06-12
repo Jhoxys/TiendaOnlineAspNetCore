@@ -6,7 +6,7 @@ namespace CapaAdmin.Models
     {
        // [Required(ErrorMessage = "The Last Name field is required"), MaxLength(100)
         [Required, MaxLength(100)]
-        public string Name { get; set; } = "";
+        public string Name { get; set; } 
 
         [Required, MaxLength(100)]
         public string Brand { get; set; } = "";
@@ -27,7 +27,7 @@ namespace CapaAdmin.Models
 
 
         [Required]
-        public decimal NoFactura { get; set; }
+        public string NoFactura { get; set; } = "";
 
         [Required]
         public decimal Discount { get; set; }
@@ -37,6 +37,14 @@ namespace CapaAdmin.Models
 
         [Required]
         public int amount { get; set; }
+
+        [Required]
+        public decimal Total { get; set; }
+
+
+       // public Product Product { get; set; } = new Product();
+
+        public int ProductId { get; set; }
 
     }
 }

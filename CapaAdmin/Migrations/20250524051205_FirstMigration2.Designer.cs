@@ -4,6 +4,7 @@ using CapaAdmin.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CapaAdmin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250524051205_FirstMigration2")]
+    partial class FirstMigration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -130,10 +133,9 @@ namespace CapaAdmin.Migrations
                         .HasPrecision(16, 2)
                         .HasColumnType("decimal(16,2)");
 
-                    b.Property<string>("NoFactura")
-                        .IsRequired()
+                    b.Property<decimal>("NoFactura")
                         .HasPrecision(16, 2)
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("decimal(16,2)");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -141,15 +143,11 @@ namespace CapaAdmin.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Total")
-                        .HasPrecision(16, 2)
-                        .HasColumnType("decimal(16,2)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Billing", (string)null);
+                    b.ToTable("Billing");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Clients", b =>
@@ -186,7 +184,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Clients", (string)null);
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Inventory", b =>
@@ -242,7 +240,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("Inventory", (string)null);
+                    b.ToTable("Inventory");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
@@ -288,7 +286,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.OrderItem", b =>
@@ -318,7 +316,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OderItems", (string)null);
+                    b.ToTable("OderItems");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Product", b =>
@@ -338,10 +336,6 @@ namespace CapaAdmin.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<decimal>("CodeProduct")
-                        .HasPrecision(16, 2)
-                        .HasColumnType("decimal(16,2)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -370,7 +364,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
