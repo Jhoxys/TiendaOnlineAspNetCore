@@ -17,6 +17,9 @@
     let index = 0;
     function Agregar() {
 
+
+
+
         console.log("gdagadsg");
 
             const tablaOriginal = document.getElementById("AddTr");
@@ -27,15 +30,6 @@
 
             // Tomamos la primera fila  para contar el articulo
             const filaOriginal = tablaOriginal.rows[1];
-       // let valorss = parseInt(filaOriginal.cells[0].textContent.trim())     
-   
-
-        //aqui intentaba hacer que el numero sume pero se complico lo hare mas simple
-        // let valor = parseInt(filaClonada.cells[0].textContent.trim());
-        // if (!isNaN(valor)) {
-        //     valor += 1;
-        //     filaClonada.cells[0].textContent = valor;
-        // }
 
 
             // Clonamos la fila completa
@@ -58,8 +52,20 @@
 
         const Famount = tablaOriginal.querySelector('input[name="amount"]');
         const Famountval = parseFloat(Famount.value);
+        // aqui controlo el itbis
+        const li = document.querySelector('#subTotal');
+        const valorli = parseFloat(li.textContent.replace("SubTotal$", ""));
 
-        if (FQtyR > 0 && FPriceR > 0) {
+        //  const CalSubItb = subTotalidad * @ViewBag.ITBISCalculo;
+        //  imprimir ITEBIS total
+        const TotalITBS = valorli * parseFloat('@ViewBag.ITBISCalculo');
+       // const valorli2 = parseFloat(li1.textContent.replace("ITB(" + @ViewBag.ITBIS+"%)$", ""));// busco el numero y remplazo lo que sobra
+  
+
+        const checks = document.querySelector('#checksActiver');
+
+        const checksImp = parseFloat(checks.value);
+        if (FQtyR > 0 && FPriceR > 0) { 
 
      
         const celdaBoton = filaClonada.cells[filaClonada.cells.length - 1]; // última celda
@@ -67,13 +73,10 @@
 
 
 
-            const inputs = filaClonada.querySelectorAll('input');
+       //   inputs.forEach(input => input.disabled = true);
 
+            
 
-
-            inputs.forEach(input => input.disabled = true);
-
-          
             
             const tbody = tablaOriginal.querySelector("#tablaDatos tbody");
 
@@ -88,10 +91,16 @@
                                  <td><input class="form-control" name="BillingDto[${index}].Price"  value="${FPriceR}"  readonly  /></td>
                                 <td><input class="form-control" id="ValAmount" name="BillingDto[${index}].amount"  value="${Famountval}" readonly  /></td>
                          <td><button class="btn btn-danger text-capitalize active"  onclick="eliminarFila(this)">Eliminar</button></td>
-                                           <td>   <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="@ViewBag.ITBIS" />
-                                   <input name="BillingDto[${index}].NoFactura" value="@ViewBag.NoFactura" type="hidden" /></td>
-                                    
+                                               <td>   <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="${TotalITBS}" />
+                                   <input name="BillingDto[${index}].NoFactura" value="@ViewBag.NoFactura" type="hidden" />
+                                                   <input name="BillingDto[${index}].Checks" id="checksActiver" type="hidden" value="${checksImp}" />
+                                   </td>
+
+                                        
                         `;
+            //    <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="${checksImp}" />
+
+
            tablaNueva.appendChild(fila);
 
           //  tablaNueva.appendChild(filaClonada);
@@ -186,9 +195,10 @@ function eliminarFila(boton) {
             // comprobar si esta chek el itbis
             const checks= document.getElementById("red").checked;
             if (checks === true) {
-
+                const ck = document.querySelector('#checksActiver');
+                ck.value = 1; // si no esta chek el itbis se pone en 0
             } else {
-                
+
                 sumaITB = valorli;
             }
 
@@ -200,6 +210,7 @@ function eliminarFila(boton) {
             const datofinal= parseFloat(sumaITB);
             datotal.value = datofinal;
 
+         
          //  const ITBTotal = document.querySelector('#AmountTotal');
            // const valorTotal = parseFloat(ITBTotal.textContent.replace("Total Amount$", ""));
           //  ITBTotal.innerHTML = ' < input name = "BillingDto[${index}].Total" value = "${valorTotal}" type = "hidden" />';
@@ -394,6 +405,8 @@ function eliminarFila(boton) {
                                <input name="BillingDto[0].NoFactura" value="0" type="hidden" />
 
                                 <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
+
+                                <input id="checksActiver" type="text" name="BillingDto[0].Checks" value="0">
 
                                 <button type="submit" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
                                     Pay  

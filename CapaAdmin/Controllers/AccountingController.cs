@@ -21,6 +21,7 @@ using System.IO.Pipelines;
 using Document = QuestPDF.Fluent.Document;
 using System.ComponentModel;
 using Newtonsoft.Json.Linq;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CapaAdmin.Controllers
 {
@@ -198,7 +199,8 @@ namespace CapaAdmin.Controllers
                         Discount = item.Discount,
                         ITB = item.ITB,
                         Total = item.Total,
-                        Quantity = item.Quantitys,
+                        Checks= item.Checks,
+                            Quantity = item.Quantitys,
                         CreatedAt = DateTime.Now,
 
 
@@ -262,82 +264,98 @@ namespace CapaAdmin.Controllers
          });
 
 
-                        page.Content().Column(column =>
-                        {
-                            column.Item().PaddingVertical(2);
-                            column.Item().Text("Factura").FontSize(5).Bold();
-                            column.Item().AlignRight(). Text("Fecha: "+DateTime.Now.ToString("d") ).FontSize(3).Bold();
-                            column.Item().PaddingVertical(2);
-                            column.Item().Table(tabla =>
-                                           {
-                                               tabla.ColumnsDefinition(columns =>
-                                               {
-                                                   columns.RelativeColumn(2);
-                                                   columns.RelativeColumn();
-                                                   columns.RelativeColumn();
-                                                   columns.RelativeColumn();
-                                               });
-                                               tabla.Header(heather =>
-                                               {
+        page.Content().Column(column =>
+                 {
+                   column.Item().PaddingVertical(2);
+                   column.Item().Text("Factura").FontSize(5).Bold();
+                   column.Item().AlignRight(). Text("Fecha: "+DateTime.Now.ToString("d") ).FontSize(3).Bold();
+                   column.Item().PaddingVertical(2);
+                   column.Item().Table(tabla =>
+                              {
+                                  tabla.ColumnsDefinition(columns =>
+                                   {
+                                       columns.RelativeColumn(2);
+                                       columns.RelativeColumn();
+                                       columns.RelativeColumn();
+                                       columns.RelativeColumn();
+                                   });
+                                  tabla.Header(heather =>
+                                     {
 
-                                                   heather.Cell().Background("#257272").
-                                                        Padding(2).Text("Producto").FontSize(3).FontColor("#fff").Bold();
+                                         heather.Cell().Background("#257272").
+                                               Padding(2).Text("Producto").FontSize(3).FontColor("#fff").Bold();
 
-                                                   heather.Cell().Background("#257272").
-                                                        Padding(2).Text("P/Unid").FontSize(3).FontColor("#fff").Bold();
+                                         heather.Cell().Background("#257272").
+                                               Padding(2).Text("P/Unid").FontSize(3).FontColor("#fff").Bold();
 
-                                                   heather.Cell().Background("#257272").
-                                                        Padding(2).Text("Cant").FontSize(3).FontColor("#fff").Bold();
+                                         heather.Cell().Background("#257272").
+                                               Padding(2).Text("Cant").FontSize(3).FontColor("#fff").Bold();
 
-                                                   heather.Cell().Background("#257272").
-                                                        Padding(2).Text("Total").FontSize(3).FontColor("#fff").Bold();
+                                         heather.Cell().Background("#257272").
+                                               Padding(2).Text("Total").FontSize(3).FontColor("#fff").Bold();
 
 
-                                               }); 
-                                               foreach (var item in fact.BillingDto)
-                                               {
-                                                   if (item.Quantitys <= 0)
-                                                   {
+                                     });
+                                  foreach (var item in fact.BillingDto)
+                                  {
+                                      if (item.Quantitys <= 0)
+                                      {
 
-                                                   }
-                                                   else
-                                                   {
-                                                       if (item.ITB <= 0)
-                                                       {
-                                                           ITBValid = item.ITB;
-                                                       }
-                                                   
-                                                       
-                                                       var cantidad = item.Quantitys;
+                                      }
+                                      else
+                                      {
+                                          if (item.Checks > 0)
+                                          {
+                                              ITBValid++;
+                                          }
 
-                                                       var precio = item.Price;
 
-                                                       var total = cantidad * precio;
-                                                       totalGeneral += total;
-                                                       tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(item.Description+" dd "+ ITBValid).FontSize(3);
-                                                       tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(cantidad.ToString()).FontSize(3);
-                                                       tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text($"${precio}").FontSize(3);
-                                                       tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).AlignRight().Text($"${total}").FontSize(3);
-                                                   }
-                                                   var CalITBIS = totalGeneral * ITBISCalculo;
-                                                   var SumaTotalITB = totalGeneral + CalITBIS;
-                                                   column.Item().PaddingVertical(2);
-                                                   column.Item().AlignRight().Text("Sub total:$" + totalGeneral).FontSize(3).Bold();
-                                                   if (ITBValid > 0)
-                                                   {
-                                                       column.Item().AlignRight().Text($"ITB({ITBIS}%)$" + CalITBIS).FontSize(3).Bold();
-                                                   }
-                                                   column.Item().AlignRight().Text("Total:" + SumaTotalITB).FontSize(3).Bold();
+                                          var cantidad = item.Quantitys;
 
-                                               }
+                                          var precio = item.Price;
 
-                                          
-                                           });
+                                          var total = cantidad * precio;
+                                          totalGeneral += total;
+                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(item.Description + " dd " + ITBValid).FontSize(3);
+                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(cantidad.ToString()).FontSize(3);
+                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text($"${precio}").FontSize(3);
+                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).AlignRight().Text($"${total}").FontSize(3);
+                                      }
+
+                                  }
+                                  var CalITBIS = totalGeneral * ITBISCalculo;
+                                  var SumaTotalITB = totalGeneral + CalITBIS;
+                                  column.Item().PaddingVertical(2);
+                                  column.Item().AlignRight().Text("Sub total:$" + totalGeneral).FontSize(3).Bold();
+                                  if (ITBValid > 0)
+                                  {
+                                      column.Item().AlignRight().Text($"ITB({ITBIS}%)$" + CalITBIS).FontSize(3).Bold();
+                                      column.Item().AlignRight().Text("Total:" + SumaTotalITB).FontSize(3).Bold();
+
+                                  }
+                                  else { column.Item().AlignRight().Text("Total:" + totalGeneral).FontSize(3).Bold(); }
+                  
+                                 
+
+
+                              });
                         });
 
-       
 
 
+                        page.Footer().Column(page =>
+                        {
+                            page.Item().PaddingVertical(2).LineHorizontal(0.5f);
+                            page.Item().AlignRight().Text(txt =>
+                            {
+                                txt.Span("Pagina ").FontSize(3);
+                                txt.CurrentPageNumber().FontSize(3);
+                                txt.Span(" de ").FontSize(3);
+                                txt.TotalPages().FontSize(3);
+                            });
+                            page.Item().PaddingVertical(2).Text("Gracias por su compra!").FontSize(3).Bold();
+                            page.Item().Text("No aceptamos devoluciones, rebice su compra y/o documentos antes de irse").FontSize(3);
+                        });
 
 
 

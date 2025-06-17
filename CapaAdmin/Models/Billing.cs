@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace CapaAdmin.Models
 {
@@ -30,7 +31,10 @@ namespace CapaAdmin.Models
         public Product Product { get; set; } = new Product();
         public int ProductId { get; set; }
 
-        public DateTime CreatedAt{ get; set; } 
+        public DateTime CreatedAt{ get; set; }
+
+        [Required]
+        public decimal Checks { get; set; }
 
     }
 }

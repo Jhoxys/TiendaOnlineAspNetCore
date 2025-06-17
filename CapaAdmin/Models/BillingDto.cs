@@ -42,7 +42,9 @@ namespace CapaAdmin.Models
         public decimal Total { get; set; }
 
 
-       // public Product Product { get; set; } = new Product();
+        [Required]
+        public decimal Checks { get; set; }
+        // public Product Product { get; set; } = new Product();
 
         public int ProductId { get; set; }
 
