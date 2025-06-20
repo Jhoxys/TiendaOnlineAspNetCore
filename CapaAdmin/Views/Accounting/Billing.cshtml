@@ -8,7 +8,7 @@
     Layout = "_LayaoutInventary";
 
     ViewData["BillingPage"] = "billing";
-
+    string search = (string)ViewData["Search"]!;
 
 
 
@@ -85,7 +85,7 @@
             fila.innerHTML = `
 
                   <th scope="row">${index}</th>
-
+                           <td></td>
                                  <td><input class="form-control" name="BillingDto[${index}].Description" value="${FDesction}" readonly  /> </td>
                                      <td><input class="form-control" name="BillingDto[${index}].Quantitys"  value="${FQtyR}"  readonly  /></td>
                                  <td><input class="form-control" name="BillingDto[${index}].Price"  value="${FPriceR}"  readonly  /></td>
@@ -252,7 +252,7 @@ function eliminarFila(boton) {
                 </div>
 
                 <div class="container">
-                    <form method="post">
+                    <form asp-action="BillingPost" asp-controller="Accounting">
                     <div class="col-md-12">
                         <div class="text-center">
                             <i class="fab fa-mdb fa-4x ms-0" style="color:#5d9fc5 ;"></i>
@@ -329,6 +329,7 @@ function eliminarFila(boton) {
                             <thead style="background-color:#84B0CA ;" class="text-white">
                                 <tr>
                                     <th scope="col">#</th>
+                                    <th scope="col">Code</th>
                                     <th scope="col">Description</th>
                                     <th scope="col">Qty</th>
                                     <th scope="col">Unit Price</th>
@@ -340,7 +341,7 @@ function eliminarFila(boton) {
                           
                                 <tr>
                                     <th scope="row">1</th>
-
+                                        <td><input class="form-control" name="CodeProduct" placeholder="" asp-for="BillingDto[0].CodeProduct" readonly /> </td>
                                         <td><input class="form-control" name="Description" placeholder="Description" asp-for="BillingDto[0].Description" /> </td>
                                         <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" required /></td>
                                         <td><input class="form-control" name="Price" placeholder="Price" onchange="CambCantidad()" asp-for="BillingDto[0].Price" required /></td>
@@ -351,6 +352,11 @@ function eliminarFila(boton) {
                                         <button type="button" onclick="Agregar()" class="btn btn-success text-capitalize active" aria-pressed="true">
                                             Agregar
                                         </button>
+                                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class="bi bi-cart4"></i>
+                                                Tienda
+                                            </button>
+
                                     </td>
                                   
                                 </tr> 
@@ -360,6 +366,13 @@ function eliminarFila(boton) {
                              
                             </tbody>
                         </table>
+                            <!-- Button trigger modal -->
+                     
+
+                      
+
+              
+
                         <hr />
  
                          
@@ -415,8 +428,63 @@ function eliminarFila(boton) {
 
                         </div>
                     </div>
-                         </form>        
+                         </form>
+
+
                 </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+
+                                    <div class="col">
+                                        <form class="d-flex" role="search" asp-action="Billing" asp-controller="Accounting">
+                                            <input class="form-control me-2" type="search" name="search" value="@search" placeholder="Search Name and Brand" aria-label="Search">
+                                            <button class="btn btn-outline-success" type="submit">S</button>
+                                        </form>
+                                    </div>
+                                    <div class="row">
+                                        <table>
+                                        @foreach (var product in ViewBag.ProductSeach)
+                                        {
+                                            <tr>
+
+                                                <td>@product.Id</td>
+                                                <td>@product.Name</td>
+                                                <td>@product.Brand</td>
+                                                <td>@product.Category</td>
+                                                <td>@(product.Price)</td>
+                                                <td><img src="/img/@product.ImageFileName" width="100" /></td>
+                                                <td>@product.CreatedAt.ToString("MM/dd/yyyy") </td>
+
+
+                                            </tr>
+
+                                        }
+
+
+                                        </table>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>

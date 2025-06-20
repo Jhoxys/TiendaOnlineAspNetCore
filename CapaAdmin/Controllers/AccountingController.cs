@@ -101,14 +101,14 @@ namespace CapaAdmin.Controllers
             return View(query);
         }
 
-  
-
-
-        public IActionResult Billing()
+        [HttpGet]  
+        public IActionResult Billing( string?search)
         {
+            
+                IQueryable<Product> query = context.Products;
 
 
-            var random = new Random();
+                var random = new Random();
             var numero = random.Next(1000, 9999); // 4 dígitos aleatorios
             string fecha = DateTime.Now.ToString("yyMds"); // Fecha y hora
                        
@@ -132,17 +132,26 @@ namespace CapaAdmin.Controllers
             Clients clients = new Clients();
             ViewData["ClientsFirstName"] = clients.FirstName;
 
+            ViewBag.ProductSeach = query.ToList();
+     
 
+            if (search != null)
+            {
+                query = query.Where(s => s.Name.Contains(search) || s.Brand.Contains(search));// agregamos una consulta de resultados
+            }
+
+
+            ViewData["Search"] = search ?? "";
+            ViewBag.ProductSeach = query.ToList();
 
             return View();
         }
-
-
+  
 
 
         [Authorize]
         [HttpPost]
-        public IActionResult  Billing(FacturaDto fact)
+        public IActionResult  BillingPost(FacturaDto fact)
         {
             decimal totalGeneral = 0;
             decimal ITBValid = 0;
@@ -198,28 +207,38 @@ namespace CapaAdmin.Controllers
                         CodeProduct = item.CodeProduct,
                         Discount = item.Discount,
                         ITB = item.ITB,
+                        Price = item.Price,
                         Total = item.Total,
                         Checks= item.Checks,
                             Quantity = item.Quantitys,
-                        CreatedAt = DateTime.Now,
+                        CreatedAt = DateTime.Now
+                        
+                    }; 
 
-
-                        Product  = new Product()
-                         {
-                        Name = item.Name ?? "Digitacion",
-                            Brand = item.Brand,
-                            Category = item.Category,
-                            Price = item.Price,
-                            Description = item.Description,
-                            CodeProduct = item.CodeProduct 
-                           }
-                        };
-
-               
-
-
+     
                         context.Billing.Add(billings); //  inserta
-   
+
+                        //if (item.Quantitys > 0)
+                        //{
+
+                        // Product pro = new Product()
+                        // {
+                        //     Name = item.Name ?? "Digitacion",
+                        //     Brand = item.Brand,
+                        //     Category = item.Category,
+                        //     Price = item.Price,
+                        //     Description = item.Description,
+                        //     CodeProduct = item.CodeProduct
+
+                        // };
+                        //    context.Products.Add(pro);
+
+                        //}
+
+
+
+
+
                     }
                 }        
                 // Aquí insertas en BD y descontas stock…

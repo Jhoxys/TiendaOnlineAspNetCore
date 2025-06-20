@@ -12,7 +12,7 @@ namespace CapaAdmin.Models
         public string Description{ get; set; } = "";
 
         [Precision(16, 2)]
-        public decimal CodeProduct { get; set; }
+        public string CodeProduct { get; set; } ="";
 
         [Precision(16, 2)]
         public decimal ITB { get; set; }
@@ -27,9 +27,8 @@ namespace CapaAdmin.Models
         [Precision(16, 2)]
         public decimal Total { get; set; }
 
-
-        public Product Product { get; set; } = new Product();
-        public int ProductId { get; set; }
+        [Precision(16, 2)]
+        public decimal Price { get; set; }
 
         public DateTime CreatedAt{ get; set; }
 
