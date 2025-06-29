@@ -131,15 +131,20 @@ namespace CapaAdmin.Controllers
             ViewBag.ITBISCalculo = ITBISCalculo;
             Clients clients = new Clients();
             ViewData["ClientsFirstName"] = clients.FirstName;
-
-            ViewBag.ProductSeach = query.ToList();
-     
-
+            ViewData["Store"] = "Store";
             if (search != null)
             {
-                query = query.Where(s => s.Name.Contains(search) || s.Brand.Contains(search));// agregamos una consulta de resultados
-            }
+                query = query.Where(s => s.Name.Contains(search) || s.Brand.Contains(search) || s.Brand.Contains(search)  );// agregamos una consulta de resultados
 
+                ViewData["activeProduct"] = "block";
+                ViewData["Store"] = "Hide Store";
+             
+            }
+            else
+            { ViewData["activeProduct"] = "none";
+                ViewData["Store"] = "Store";
+            }
+          
 
             ViewData["Search"] = search ?? "";
             ViewBag.ProductSeach = query.ToList();
@@ -151,7 +156,7 @@ namespace CapaAdmin.Controllers
 
         [Authorize]
         [HttpPost]
-        public IActionResult  BillingPost(FacturaDto fact)
+        public IActionResult  Billing(FacturaDto fact)
         {
             decimal totalGeneral = 0;
             decimal ITBValid = 0;

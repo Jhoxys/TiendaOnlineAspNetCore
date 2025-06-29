@@ -169,7 +169,7 @@ function eliminarFila(boton) {
          
                 const input3 = tablaOriginal.rows[i].querySelector('#ValAmount');
                 const valor3 = parseFloat(input3.value);
-            subTotalidad += valor3;
+                subTotalidad += valor3;
           
         }
 
@@ -225,11 +225,92 @@ function eliminarFila(boton) {
     }
 
 
+    function miBoton() {
+		const ArtControl = document.getElementById('ArtControl');
+     
+       const btn = document.querySelector('#btStore');
+        btn.appendChild = '<i class="bi bi-cart4"></i>';
+       btn.textContent = 'Hide Store'; // Cambiar el texto del botón a Hide "Store"
+
+        if (ArtControl.style.display === 'block') {
+            ArtControl.style.display = 'none'; // Ocultar el div si ya está visible
+            btn.appendChild = '<i class="bi bi-cart4"></i>';
+       btn.textContent = 'Store'; // Cambiar el texto del botón a "Store"
+		} else {
+			ArtControl.style.display = 'block'; // Mostrar el div si está oculto
+
+
+		}                
+    }
+    function addProcut(boton) {
+		const tablaOriginal = document.getElementById("AddTr");
+        const filaOriginal = tablaOriginal.rows[1];
+
+
+          const tablaSegunda = document.getElementById("AddTableProduct");
+        const filaOriginalDos = boton.closest("tr");
+          const filaDos = filaOriginalDos.cloneNode(true);
+         //filaClonadaDos.cells[0].textContent = parseFloat(filaOriginalDos.cells[0].textContent) + 1;
+        const preciVal = parseFloat(filaOriginalDos.cells[3].textContent);
+
+        //const FQty = parseInt(filaClonada.cells[2].textContent);
+        const FPrice = filaOriginal.querySelector('input[name="Price"]');
+              FPrice.value = preciVal;
+
+        const ArtControl = document.getElementById('ArtControl');
+        ArtControl.style.display = 'none';
+        const btn = document.querySelector('#btStore');
+        btn.appendChild = '<i class="bi bi-cart4"></i>';
+        btn.textContent = 'Store'; // Cambiar el texto del botón a Hide "Store"
+         // Ocultar el div si ya está visible
+        //const FQty = parseInt(filaClonada.cells[2].textContent);
+      //  filaOriginal.cells[4].textContent = preciVal;
+
+
+        // const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
+        // const FQtyR = parseFloat(FQty.value);
+
+        // const FDesc = tablaOriginal.querySelector('input[name="Description"]');
+        // const FDesction = FDesc.value;
+
+        // const Famount = tablaOriginal.querySelector('input[name="amount"]');
+        // const Famountval = parseFloat(Famount.value);
+         // const FPriceR = parseFloat(FPrice);
+
+        //console.log("Corriente: " + FPrice);
+
+        // const Names = filaOriginalDos.cells[1].textContent;
+        // const NamesR = parseFloat(FPrice);
+
+        // console.log("Names: " + NamesR);
+
+
+
+
+        // aqui selecionamos Cantidad
+        // const input = tablaOriginal.querySelector('input[type="Description"]');
+        // const valor = 1;
+
+        // // aqui selecionamos precio
+        // const input1 = tablaOriginal.querySelector('input[name="Price"]');
+        //       input1.value = 1;
+
+        // let total = valor1 * valor;
+        // // aqui le cambiamos el total al monto
+        // const input2 = tablaOriginal.querySelector('input[name="amount"]');
+        // input2.value = total;
+        // const valor2 = parseFloat(input2.value);
+
+
+        // const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
+        // const FQtyR = parseFloat(FQty.value);
+
+
+		// Pegamos la fila clonada en la tabla nueva
+		
+	}   
 
 </script>
-
-
-
 
 
 <section class="w-100 p-4 justify-content-center">
@@ -252,7 +333,7 @@ function eliminarFila(boton) {
                 </div>
 
                 <div class="container">
-                    <form asp-action="BillingPost" asp-controller="Accounting">
+                    <form method="post">
                     <div class="col-md-12">
                         <div class="text-center">
                             <i class="fab fa-mdb fa-4x ms-0" style="color:#5d9fc5 ;"></i>
@@ -320,8 +401,8 @@ function eliminarFila(boton) {
                             </ul>
                         </div>
                     </div>
-                       
-                   
+
+                        
                     <div class="row my-2 mx-1 justify-content-center">
              
                         <table class="table table-striped table-borderless" id="AddTr" > 
@@ -352,9 +433,9 @@ function eliminarFila(boton) {
                                         <button type="button" onclick="Agregar()" class="btn btn-success text-capitalize active" aria-pressed="true">
                                             Agregar
                                         </button>
-                                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            <button type="button" onclick="miBoton()" id="btStore" class="btn btn-outline-danger">
                                                 <i class="bi bi-cart4"></i>
-                                                Tienda
+                                                @ViewData["Store"]
                                             </button>
 
                                     </td>
@@ -419,7 +500,7 @@ function eliminarFila(boton) {
 
                                 <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
 
-                                <input id="checksActiver" type="text" name="BillingDto[0].Checks" value="0">
+                                <input id="checksActiver" type="hidden" name="BillingDto[0].Checks" value="0" >
 
                                 <button type="submit" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
                                     Pay  
@@ -429,63 +510,69 @@ function eliminarFila(boton) {
                         </div>
                     </div>
                          </form>
+                    <div class="mb-3" id="ArtControl" style="display:@ViewData["activeProduct"]">
+                        <label for="recipient-name" class="h1">Store Product:</label>
 
+                        <div class="col">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" name="search" value="@search" placeholder="Search Name and Brand" aria-label="Search">
+                                <button class="btn btn-outline-success"  type="submit">Seac</button>
+                            </form>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                            <table class="table table-striped table-borderless"  id="AddTableProduct">
+                                <thead>
+                                    <tr>
+                                      <th style="cursor: pointer;" onclick="sortTable('Name')">Name </th>
+                                      <th style="cursor: pointer;" onclick="sortTable('Brand')">Brand  </th>
+                                      <th style="cursor: pointer;" onclick="sortTable('Category')">Category  </th>
+                                      <th style="cursor: pointer;" onclick="sortTable('Price')">Price  </th>
+                                      <th>Image</th>
+                                      <th>Code</th>
+                                      <th style="cursor: pointer;" onclick="sortTable('CreatedAt')"> Created At</th>
+                                      <th>Action</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                            
+                                @foreach (var product in ViewBag.ProductSeach)
+                                {
+
+                                    <tr>
+
+                                  
+                                        <td>@product.Name</td>
+                                        <td>@product.Brand</td>
+                                        <td>@product.Category</td>
+                                        <td>@(product.Price)</td>
+                                        <td><img src="/img/@product.ImageFileName" width="100" /></td>
+                                        <td>@(product.CodeProduct)</td>
+                                        <td>@product.CreatedAt.ToString("MM/dd/yyyy") </td>
+                                            <td>
+                                             <button type="button" onclick="addProcut(this)" class="btn btn-danger text-capitalize active" aria-pressed="true">
+                                                Agregar
+                                            </button>
+                                            </td>
+
+                                    </tr>
+
+                                }
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+
+                    </div>
 
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-
-                                <div class="mb-3">
-                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-
-                                    <div class="col">
-                                        <form class="d-flex" role="search" asp-action="Billing" asp-controller="Accounting">
-                                            <input class="form-control me-2" type="search" name="search" value="@search" placeholder="Search Name and Brand" aria-label="Search">
-                                            <button class="btn btn-outline-success" type="submit">S</button>
-                                        </form>
-                                    </div>
-                                    <div class="row">
-                                        <table>
-                                        @foreach (var product in ViewBag.ProductSeach)
-                                        {
-                                            <tr>
-
-                                                <td>@product.Id</td>
-                                                <td>@product.Name</td>
-                                                <td>@product.Brand</td>
-                                                <td>@product.Category</td>
-                                                <td>@(product.Price)</td>
-                                                <td><img src="/img/@product.ImageFileName" width="100" /></td>
-                                                <td>@product.CreatedAt.ToString("MM/dd/yyyy") </td>
-
-
-                                            </tr>
-
-                                        }
-
-
-                                        </table>
-
-                                    </div>
-
-
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+                </div>
+               
         </div>
     </div>
 </section>
