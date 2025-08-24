@@ -44,9 +44,12 @@ namespace CapaAdmin.Models
 
         [Required]
         public decimal Checks { get; set; }
-        // public Product Product { get; set; } = new Product();
 
+        [Required]
         public int ProductId { get; set; }
+
+        public int TypingId { get; set; }
+
 
     }
 }

@@ -17,6 +17,7 @@ namespace CapaAdmin.Service
         public DbSet<Billing> Billing { get; set; }
         public DbSet<Inventory> Inventory { get; set; }
         public DbSet<Clients> Clients { get; set; }
+        public DbSet<Typing> Typing { get; set; }
     }
 
 }

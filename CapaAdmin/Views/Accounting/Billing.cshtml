@@ -18,8 +18,6 @@
     function Agregar() {
 
 
-
-
         console.log("Metodo agregar activo");
 
         const tablaOriginal = document.getElementById("AddTr");
@@ -76,7 +74,17 @@
         //  imprimir ITEBIS total
         const TotalITBS = valorli * parseFloat('@ViewBag.ITBISCalculo');
        // const valorli2 = parseFloat(li1.textContent.replace("ITB(" + @ViewBag.ITBIS+"%)$", ""));// busco el numero y remplazo lo que sobra
-  
+
+
+
+        const FProductId = tablaOriginal.querySelector('input[name="ProductId"]');
+        const FvProductId = parseFloat(FProductId.value);
+        //  FQty.value = 1;
+
+
+
+
+
 
         const checks = document.querySelector('#checksActiver');
 
@@ -85,7 +93,7 @@
 
      
         const celdaBoton = filaClonada.cells[filaClonada.cells.length - 1]; // última celda
-        celdaBoton.innerHTML = '<button class="btn btn-danger text-capitalize active"  onclick="eliminarFila(this)">Eliminar</button>';
+        celdaBoton.innerHTML = ' <button class="btn btn-danger text-capitalize active"  onclick="eliminarFila(this)">Eliminar</button>';
 
 
 
@@ -101,7 +109,8 @@
             fila.innerHTML = `
 
                   <th scope="row">${index}</th>
-                     <td><input class="form-control" name="BillingDto[${index}].CodeProduct" value="${CodeR}" readonly /></td>
+                                  <td><input name="BillingDto[${index}].ProductId" value="${FvProductId}" type="hidden" /></td>
+                      <td><input class="form-control" name="BillingDto[${index}].CodeProduct" value="${CodeR}" readonly /></td>
                       <td><input class="form-control" name="BillingDto[${index}].Name" value="${CNameR}" readonly /></td>
                       <td><input class="form-control" name="BillingDto[${index}].Stock" value="${FStockR}" readonly /></td>
                       <td><input class="form-control" name="BillingDto[${index}].Description" value="${FDesction}" readonly  /> </td>
@@ -113,7 +122,8 @@
                           <input name="BillingDto[${index}].NoFactura" value="@ViewBag.NoFactura" type="hidden" />
                           <input name="BillingDto[${index}].Checks" id="checksActiver" type="hidden" value="${checksImp}" />
                       </td>
-                 
+                                       
+
                         `;
             //    <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="${checksImp}" />
 
@@ -128,6 +138,7 @@
           
 
             CambCantidad();
+
         }
       //  filaClonada.cells[0].innerHTML = total;
        // document.getElementById("totalCantidad").textContent = total;
@@ -229,12 +240,7 @@ function eliminarFila(boton) {
             const datofinal= parseFloat(sumaITB);
             datotal.value = datofinal;
 
-         
-         //  const ITBTotal = document.querySelector('#AmountTotal');
-           // const valorTotal = parseFloat(ITBTotal.textContent.replace("Total Amount$", ""));
-          //  ITBTotal.innerHTML = ' < input name = "BillingDto[${index}].Total" value = "${valorTotal}" type = "hidden" />';
-
-
+       
 
 
         }
@@ -283,6 +289,8 @@ function eliminarFila(boton) {
 
         const FQty = filaOriginal.querySelector('input[name="Quantitys"]');
               FQty.value = 1;
+        FQty.max = filaOriginalDos.cells[5].textContent; // Set max quantity based on stock
+       // max = "10"
 
         const FCode = filaOriginal.querySelector('input[name="CodeProduct"]');
               FCode.value = filaOriginalDos.cells[6].textContent;
@@ -296,6 +304,13 @@ function eliminarFila(boton) {
               FStock.value = filaOriginalDos.cells[5].textContent;
 
 
+        const FProductId = filaOriginal.querySelector('input[name="ProductId"]');
+              FProductId.value = filaOriginalDos.cells[9].textContent;
+
+
+          
+
+
         const ArtControl = document.getElementById('ArtControl');
         ArtControl.style.display = 'none';
         const btn = document.querySelector('#btStore');
@@ -303,11 +318,30 @@ function eliminarFila(boton) {
         CambCantidad();
   
 		
-	}   
+	}
+    var contador = 0;
+    function printPDF(boton) {
+        contador++;
 
+        boton.textContent = 'Printing...';
+        this.appendChild = '<button type="submit" class="btn btn-primary text-capitalize active" onclick="printPDF(this)" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button"/>';
+        var pdfUrl = "@ViewBag.PdfPath"; // correcto
+       /// alert("Printing PDF: " + pdfUrl);
+    
+			//alert("You can only print once.");
+
+        var win = window.open(pdfUrl, "_blank");
+        win.print();
+        location.reload(true);
+            return;
+        
+
+    }
 </script>
 <section class="w-100 p-4 justify-content-center">
     <div class="card">
+        <p>Ruta PDF: @ViewBag.PdfPath</p>
+
         <div class="card-body">
             <div class="container mb-5 mt-3">
                 <div class="row d-flex align-items-baseline">
@@ -326,13 +360,24 @@ function eliminarFila(boton) {
 
                 <div class="container">
                     <form method="post">
+
                     <div class="col-md-12">
                         <div class="text-center">
                             <i class="fab fa-mdb fa-4x ms-0" style="color:#5d9fc5 ;"></i>
-                            <p class="pt-0">MDBootstrap.com</p>
+                            <p class="pt-0">Factura</p>
                         </div>
 
                     </div>
+                        @if (ViewBag.SuccessMessage != null)
+                        {
+                            <button type="submit" class="btn btn-danger text-capitalize " onclick="printPDF(this)" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
+                                Imprimir
+                            </button>
+                        }
+        
+
+
+
                         @if (ViewBag.ErrorMessage != null)
                     {
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -352,11 +397,9 @@ function eliminarFila(boton) {
                     @inject UserManager<ApplicationUser> UserManager
 
                     <div class="row">
-           
                             @if (SignInManager.IsSignedIn(User))
                             {
                                 var appUser = await UserManager.GetUserAsync(User);
-
                                 <div class="col-xl-8">
                                     <ul class="list-unstyled">
                                     <li class="text-muted">Vendedor: <span style="color:#5d9fc5 ;"> @appUser.FirstName  @appUser.LastName </span></li>
@@ -370,12 +413,20 @@ function eliminarFila(boton) {
                                     <label class="me-1 fw-bold">Address</label>
                                     <input class="form-control" placeholder="Adress" asp-for="@ViewData["ClientsFirstName"]" />
                                     <label class="me-1 fw-bold">Phone</label>
-                                    <input class="form-control" placeholder="Phone" asp-for="@ViewData["ClientsFirstName"]" />
-                                    
+                                    <input class="form-control" placeholder="Phone" asp-for="@ViewData["ClientsFirstName"]" />              
                                     <br />
- 
                         </div>
                             }
+
+                            @if (ViewBag.ErrorMessage != null)
+                            {
+                                <div class="">
+									<p class="text-danger">@ViewBag.ErrorMessage</p>    
+								</div>
+
+                            }
+
+
                         <div class="col-xl-4">
                             <p class="text-muted">Invoice</p>
                             <ul class="list-unstyled">
@@ -404,6 +455,7 @@ function eliminarFila(boton) {
                                     <th class="col">Unit Price</th>
                                     <th class="col">Amount</th>
                                     <th class="col">Action</th>
+                                    <th style="display:none">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -413,7 +465,7 @@ function eliminarFila(boton) {
                                         <td><input class="form-control" name="Name" placeholder="Digitacion" asp-for="BillingDto[0].Name" value="Digitacion" readonly /> </td>
                                         <td><input class="form-control" name="Stock" value="0" readonly /> </td>
                                         <td><input class="form-control" name="Description" placeholder="Description" asp-for="BillingDto[0].Description" /> </td>
-                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" required /></td>
+                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" min="1"  required  /></td>
                                         <td><input class="form-control" name="Price" placeholder="Price" onchange="CambCantidad()" asp-for="BillingDto[0].Price" required /></td>
                                         <td><input class="form-control" id="ValAmount" value="0"  name="amount" placeholder="Amount" asp-for="BillingDto[0].amount" disabled /></td>
                                     <td>
@@ -424,9 +476,10 @@ function eliminarFila(boton) {
                                                 <i class="bi bi-cart4"></i>
                                                 @ViewData["Store"]
                                             </button>
-
                                     </td>
-                                  
+
+
+                                        <td style="display:none"><input name="ProductId" value="0"/> </td>
                                 </tr> 
 
                             </tbody>
@@ -480,11 +533,19 @@ function eliminarFila(boton) {
                                 <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
 
                                 <input id="checksActiver" type="hidden" name="BillingDto[0].Checks" value="0" >
+                                @if (ViewBag.SuccessMessage != null)
+                                    {
+                              
+                                }
+                                else
+                                {
+                                
+                                    <button type="submit" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
+                                        Guardar Factura
+                                    </button>
+                                }
 
-                                <button type="submit" class="btn btn-primary text-capitalize active" style="background-color: rgb(96, 189, 243);" asp-action="Billing" asp-controller="Accounting" role="button">
-                                    Pay  
-                                    Now
-                                </button>
+           
 
                         </div>
                     </div>
@@ -512,18 +573,20 @@ function eliminarFila(boton) {
                                         <th>Code</th>
                                       <th style="cursor: pointer;" onclick="sortTable('CreatedAt')"> Descrition</th>
                                       <th>Action</th>
+                                        <th style="display:none">ID</th>
                                     </tr>
 
                                 </thead>
                                 <tbody>
 
-                            
-                                @foreach (var product in ViewBag.ProductSeach)
+                                    @if (ViewBag.ProductSeach !=null)
+                                    {
+                                        
+                                 
+                                    @foreach (var product in ViewBag.ProductSeach)
                                 {
 
                                     <tr>
-
-                                  
                                         <td>@product.Name</td>
                                         <td>@product.Brand</td>
                                         <td>@product.Category</td>
@@ -537,11 +600,11 @@ function eliminarFila(boton) {
                                                 Agregar
                                             </button>
                                             </td>
-
+                                            <td style="display:none">@product.Id </td>
                                     </tr>
 
                                 }
-
+                                    }
                                 </tbody>
                             </table>
 

@@ -32,8 +32,12 @@ namespace CapaAdmin.Models
         public decimal YearExpenses { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public Product Product { get; set; } = new Product();
 
-    
+        public int? BillingId { get; set; }
+ 
+
+
+
+
     }
 }

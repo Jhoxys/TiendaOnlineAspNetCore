@@ -111,11 +111,11 @@ namespace CapaAdmin.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Checks")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
 
                     b.Property<string>("CodeProduct")
                         .IsRequired()
-                        .HasPrecision(16, 2)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
@@ -123,7 +123,6 @@ namespace CapaAdmin.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasPrecision(16, 2)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Discount")
@@ -136,7 +135,6 @@ namespace CapaAdmin.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasPrecision(16, 2)
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NoFactura")
@@ -155,7 +153,12 @@ namespace CapaAdmin.Migrations
                         .HasPrecision(16, 2)
                         .HasColumnType("decimal(16,2)");
 
+                    b.Property<int?>("TypingId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TypingId");
 
                     b.ToTable("Billing");
                 });
@@ -205,6 +208,9 @@ namespace CapaAdmin.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("BillingId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -223,9 +229,6 @@ namespace CapaAdmin.Migrations
                     b.Property<decimal>("MonthlyExpenses")
                         .HasPrecision(16, 2)
                         .HasColumnType("decimal(16,2)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -248,7 +251,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("BillingId");
 
                     b.ToTable("Inventory");
                 });
@@ -379,6 +382,56 @@ namespace CapaAdmin.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("CapaAdmin.Models.Typing", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasPrecision(16, 2)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Discount")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<decimal>("ITB")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasPrecision(16, 2)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NoFactura")
+                        .IsRequired()
+                        .HasPrecision(16, 2)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Typing");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -514,6 +567,13 @@ namespace CapaAdmin.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("CapaAdmin.Models.Billing", b =>
+                {
+                    b.HasOne("CapaAdmin.Models.Typing", null)
+                        .WithMany("Billing")
+                        .HasForeignKey("TypingId");
+                });
+
             modelBuilder.Entity("CapaAdmin.Models.Clients", b =>
                 {
                     b.HasOne("CapaAdmin.Models.Billing", "Billing")
@@ -527,13 +587,9 @@ namespace CapaAdmin.Migrations
 
             modelBuilder.Entity("CapaAdmin.Models.Inventory", b =>
                 {
-                    b.HasOne("CapaAdmin.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
+                    b.HasOne("CapaAdmin.Models.Billing", null)
+                        .WithMany("Inventories")
+                        .HasForeignKey("BillingId");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
@@ -613,9 +669,19 @@ namespace CapaAdmin.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("CapaAdmin.Models.Billing", b =>
+                {
+                    b.Navigation("Inventories");
+                });
+
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
                 {
                     b.Navigation("Items");
+                });
+
+            modelBuilder.Entity("CapaAdmin.Models.Typing", b =>
+                {
+                    b.Navigation("Billing");
                 });
 #pragma warning restore 612, 618
         }

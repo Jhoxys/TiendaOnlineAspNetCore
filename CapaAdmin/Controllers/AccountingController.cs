@@ -22,6 +22,9 @@ using Document = QuestPDF.Fluent.Document;
 using System.ComponentModel;
 using Newtonsoft.Json.Linq;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore;
+using System.Globalization;
+using System.IO;
 
 namespace CapaAdmin.Controllers
 {
@@ -43,33 +46,105 @@ namespace CapaAdmin.Controllers
             this.env = env;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            //var query= context.Inventory.OrderByDescending(p => p.Id).Take(4).ToList();
-            var query = context.Inventory.ToList();
-         //   decimal contar = 0;
-            DateTime fecha = DateTime.Now;
+            //   decimal contar = 0;
+            DateTime fechas = DateTime.Now;
+
+            var fecha = DateTime.ParseExact(fechas.ToString("dd/MM/yyyy"), "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            Console.WriteLine("Fecha: " + fecha);
+            //  var query= context.Inventory.OrderByDescending(p => p.Id).Take(4).ToList();
+            var query = await context.Typing.Include(i => i.Billing).ToListAsync();
+
+            DateTime fechahoy = DateTime.Now;
+            decimal quantity = 0;
+            decimal weeks = 0;
+
+
+
+            //  fechahoy = item.CreatedAt.AddDays(15);
+
+            var Result = query.Where(o => o.CreatedAt.ToString("dd/MM/yyyy").Equals(fecha.ToString("dd/MM/yyyy")));
+
+            if (Result.Count() > 0)
+            {
+                foreach (var item in Result)
+                {
+                    quantity += item.Price;
+                    Console.WriteLine("Cantidad: " + item.Total);
+                
+
+                 
+                }
+           
+
+
+
+
+            }
+            else quantity += quantity;
+
+
+            var week = query.Where(o => o.CreatedAt.DayOfWeek == fecha.DayOfWeek);
+
+            if (week.Count() > 0)
+            {
+                foreach (var item in query)
+                {
+
+                    var today = DateTime.Now .DayOfWeek;
+                    if (today >= DayOfWeek.Monday && today <= DayOfWeek.Saturday)
+                    {
+                        // Código para ejecutarse de lunes a viernes
+                        weeks += item.Price;
+                    }
+
+
+
+
+                    if (fecha.DayOfWeek != DayOfWeek.Sunday)
+                    {
+                        // Ejecutar este bloque solo de lunes a viernes
+                      //  weeks += item.Price;
+                    }
+
+                }
+            }
+
+
+
+
+
+            /*/.CreatedAt.ToString("dd/MM/yyyy").Equals(fecha.ToString("dd/MM/yyyy")))
+            {
+            quantity += bill.Quantity;
+
+        }
+    });
+*/
+
+            //        var inventarioConTyping = await context.Inventory
+            //.Include(i => i.Typing)
+            //.Where(i => i.Fecha.Date == fecha.Day)
+            //.ToListAsync();
+
+            ///   ganancias diarias / DailyEarnings
+            //var hoy = query.Where(o => o.Billing.CreatedAt
+            //== o.Billing.Typing.CreatedAt ) ;
+
+
+            //    Console.WriteLine("Hoy: " + hoy.Count());
 
             //  ganancias diarias / DailyEarnings
-            var hoy = query.Where(o => o.CreatedAt.Day == fecha.Day);
-            decimal hoys = 0;
-            if (hoy.Count() > 0)
-            {
-                foreach (var item in query)
-                {
-                    hoys += item.DailyEarnings;
-                }
-            }
-            //  ganancias diarias / DailyEarnings
             var month = query.Where(o => o.CreatedAt.Month == fecha.Month);
-            decimal months = 0;
-            if (month.Count() > 0)
-            {
-                foreach (var item in query)
-                {
-                    months += item.MonthlyEarnings;
-                }
-            }
+            //decimal months = 0;
+            //if (month.Count() > 0)
+            //{
+            //    foreach (var item in query)
+            //    {
+            //        //months += item.MonthlyEarnings;
+            //    }
+            //}
             //  ganancias mensuales / DailyEarnings
             var year = query.Where(o => o.CreatedAt.Year == fecha.Year);
             decimal years = 0;
@@ -77,27 +152,19 @@ namespace CapaAdmin.Controllers
             {
                 foreach (var item in query)
                 {
-                    years += item.YearEarnings;
+                   // years += item.YearEarnings;
                 }
             }
 
             //  ganancias mensuales / DailyEarnings
-            var week = query.Where(o => o.CreatedAt.DayOfWeek == fecha.DayOfWeek);
-            decimal weeks = 0;
-            if (week.Count() > 0)
-            {
-                foreach (var item in query)
-                {
-                    weeks += item.WeeklyEarnings;
-                }
-            }
+       
 
-
-            ViewBag.Today = hoys;
-            ViewBag.Month = months;
+         //  var hoys = "hoy.Sum(o => o.DailyEarnings)";
+            ViewBag.Today = fecha.ToString("dd/MM/yyyy");
+          //  ViewBag.Month = months;
             ViewBag.Years = years;
             ViewBag.Weeks = weeks;
-
+            ViewBag.Quantity = quantity;
             return View(query);
         }
 
@@ -134,21 +201,21 @@ namespace CapaAdmin.Controllers
             ViewData["Store"] = "Store";
             if (search != null)
             {
-                query = query.Where(s => s.Name.Contains(search) || s.Brand.Contains(search) || s.Brand.Contains(search)  );// agregamos una consulta de resultados
-
+                query = query.Where(s => (s.Name.Contains(search) || s.Brand.Contains(search))  && s.Stock > 0);// agregamos una consulta de resultados
                 ViewData["activeProduct"] = "block";
                 ViewData["Store"] = "Hide Store";
-             
+                ViewBag.ProductSeach = query.ToList();
             }
             else
             { ViewData["activeProduct"] = "none";
-                ViewData["Store"] = "Store";
+              ViewData["Store"] = "Store";
+
+
             }
-          
+            query = query.Where(s =>  s.Stock > 0);// agregamos una consulta de resultados
 
-            ViewData["Search"] = search ?? "";
             ViewBag.ProductSeach = query.ToList();
-
+            ViewData["Search"] = search ?? "";
             return View();
         }
   
@@ -156,53 +223,33 @@ namespace CapaAdmin.Controllers
 
         [Authorize]
         [HttpPost]
-        public IActionResult  Billing(FacturaDto fact)
+        public async Task<IActionResult> Billing(FacturaDto fact)
         {
             decimal totalGeneral = 0;
             decimal ITBValid = 0;
-
             string ITBIS = configuration.GetValue<string>("ITBISSettings:ITBIS") ?? "";
             decimal ITBISCalculo = configuration.GetValue<decimal>("ITBISSettings:ITBISCalculo");
             if (!ModelState.IsValid)
             {
-                //{
-              
-       
+
         foreach(var item in fact.BillingDto)
                 {
-
                    if( item.Quantitys > 0)
                     {
-                        //if (item.Quantitys <= 0)
-                        //{
-                        //    ModelState.AddModelError("Quantitys", "La cantidad debe ser mayor a 0");
-                        //    return View();
-                        //}
-                        //if (item.CodeProduct <= 0)
-                        //{
-                        //    ModelState.AddModelError("CodeProduct", "El codigo del producto debe ser mayor a 0");
-                        //    return View();
-                        //}
-                        //if (string.IsNullOrEmpty(item.Description))
-                        //{
-                        //    ModelState.AddModelError("Description", "La descripcion no puede estar vacia");
-                        //    return View();
-                        //}
                         var product = context.Products.Find(item.ProductId);
 
                         if (product != null)
                         {
                             // Descontar stock si existe
                             product.Stock -= item.Quantitys;
-
-
+                            TempData["Error"] = "Se envio la factura sactifactoriamente!";
                         }
                         else
-                        {
-                           
+                        {   
                    
                         }
-                        
+                        TempData["Error"] = "Se envio la factura sactifactoriamente!"+ item.ProductId;
+
 
                         Billing billings = new Billing()
                     {
@@ -216,33 +263,27 @@ namespace CapaAdmin.Controllers
                         Total = item.Total,
                         Checks= item.Checks,
                             Quantity = item.Quantitys,
-                        CreatedAt = DateTime.Now
-                        
+                        CreatedAt = DateTime.Now      
                     }; 
 
      
                         context.Billing.Add(billings); //  inserta
 
-                        //if (item.Quantitys > 0)
-                        //{
+                        if ( Convert.ToInt32( item.CodeProduct )<= 0)
+                        {
 
-                        // Product pro = new Product()
-                        // {
-                        //     Name = item.Name ?? "Digitacion",
-                        //     Brand = item.Brand,
-                        //     Category = item.Category,
-                        //     Price = item.Price,
-                        //     Description = item.Description,
-                        //     CodeProduct = item.CodeProduct
-
-                        // };
-                        //    context.Products.Add(pro);
-
-                        //}
+                            Typing Typ = new Typing()
+                            {
+                                Name = item.Name,
+                                Price = item.Price,
+                                Description = item.Description,
+                                CreatedAt = DateTime.Now
 
 
+                            };
+                            context.Typing.Add(Typ);
 
-
+                        }
 
                     }
                 }        
@@ -260,9 +301,6 @@ namespace CapaAdmin.Controllers
                 //// code in your main method
                var data = Document.Create(container =>
                 {
-
-
-
                     container.Page(page =>
                     {
                         page.Size(80, 150); // mm
@@ -332,12 +370,8 @@ namespace CapaAdmin.Controllers
                                           {
                                               ITBValid++;
                                           }
-
-
                                           var cantidad = item.Quantitys;
-
                                           var precio = item.Price;
-
                                           var total = cantidad * precio;
                                           totalGeneral += total;
                                           tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(item.Description + " dd " + ITBValid).FontSize(3);
@@ -353,19 +387,13 @@ namespace CapaAdmin.Controllers
                                   column.Item().AlignRight().Text("Sub total:$" + totalGeneral).FontSize(3).Bold();
                                   if (ITBValid > 0)
                                   {
-                                      column.Item().AlignRight().Text($"ITB({ITBIS}%)$" + CalITBIS).FontSize(3).Bold();
-                                      column.Item().AlignRight().Text("Total:" + SumaTotalITB).FontSize(3).Bold();
-
+                                   column.Item().AlignRight().Text($"ITB({ITBIS}%)$" + CalITBIS).FontSize(3).Bold();
+                                   column.Item().AlignRight().Text("Total:" + SumaTotalITB).FontSize(3).Bold();
                                   }
                                   else { column.Item().AlignRight().Text("Total:" + totalGeneral).FontSize(3).Bold(); }
-                  
-                                 
-
-
+                            
                               });
                         });
-
-
 
                         page.Footer().Column(page =>
                         {
@@ -389,18 +417,33 @@ namespace CapaAdmin.Controllers
                // instead of the standard way of generating a PDF file
                .GeneratePdf();
 
-                Stream stream = new MemoryStream(data);
+               /// Stream stream = new MemoryStream(data);
+                // Carpeta donde guardaremos (ej: wwwroot/Pdfs)
+    string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Pdfs");
+    if (!Directory.Exists(folderPath))
+        Directory.CreateDirectory(folderPath);
 
-                return File(stream, "application/pdf", $"Fact-{DateTime.Now}.pdf");
-                //return View(); //return RedirectToAction("Billing");
+    // Nombre único para evitar sobreescrituras
+    string fileName = $"Fact-{DateTime.Now:yyyyMMddHHmmss}.pdf";
+    string filePath = Path.Combine(folderPath, fileName);
+
+    // Guardar el PDF en el servidor
+                await System.IO.File.WriteAllBytesAsync(filePath, data);
+
+                // Construir URL pública
+                string pdfUrl = Url.Content($"~/Pdfs/{fileName}");
+
+                // Pasar al ViewBag
+                ViewBag.PdfPath = pdfUrl;
+                //  return File(stream, "application/pdf", $"Fact-{DateTime.Now}.pdf");
+                //  return RedirectToAction("Billing", "Accounting");
+                /// + RedirectToAction("Billing", "Accounting")
+                /// 
+                return View(fact);
             }
-            else
-            {
-                ViewBag.ErrorMessage = "El modelo no es válido. xd";
-            }
+           
 
-
-            return View();
+            return RedirectToAction("Billing", "Accounting");
 
 
         }

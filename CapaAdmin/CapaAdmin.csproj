@@ -25,4 +25,8 @@
     <None Include="C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\Models\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Pdfs\" />
+  </ItemGroup>
+
 </Project>
