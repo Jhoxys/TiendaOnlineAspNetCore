@@ -8,7 +8,6 @@ namespace CapaAdmin.Models
         public int Id { get; set; }
         public int Quantity { get; set; }
 
-
         public string Name { get; set; } = "";
 
      
@@ -35,11 +34,13 @@ namespace CapaAdmin.Models
         public DateTime CreatedAt{ get; set; }
 
         [Precision(16, 2)]
-        public decimal Checks { get; set; }
+        public decimal Debt { get; set; }
+
+
+
+
 
         public int? TypingId { get; set; }// para que acepte null
-
-
 
         public List<Inventory> Inventories { get; set; }= new List<Inventory>();
 

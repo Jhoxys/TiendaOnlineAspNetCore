@@ -257,6 +257,934 @@
       "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113110.pdf"
     },
     {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113142.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113142.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113555.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113555.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113727.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113727.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113736.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113736.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113922.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113922.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824113957.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824113957.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114000.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114000.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114037.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114037.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114046.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114046.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114102.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114102.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114105.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114105.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114200.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114200.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114214.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114214.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114217.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114217.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114249.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114249.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250824114255.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250824114255.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826232919.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826232919.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826232923.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826232923.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826233430.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826233430.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826233548.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826233548.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826233704.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826233704.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826233744.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826233744.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826233748.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826233748.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826234058.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826234058.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826234240.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826234240.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826234428.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826234428.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826234436.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826234436.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235356.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235356.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235407.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235407.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235422.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235422.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235506.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235506.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235508.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235508.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250826235944.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250826235944.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827001259.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827001259.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827001314.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827001314.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827001526.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827001526.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827001559.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827001559.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827001743.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827001743.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827002739.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827002739.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827002827.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827002827.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827003107.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827003107.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827003455.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827003455.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827003611.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827003611.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827004358.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827004358.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827004735.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827004735.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005502.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005502.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005506.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005506.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005715.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005715.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005717.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005717.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005723.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005723.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005744.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005744.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005821.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005821.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005832.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005832.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005913.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005913.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005915.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005915.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827005927.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827005927.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010024.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010024.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010134.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010134.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010150.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010150.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010158.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010158.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010208.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010208.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827010211.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827010211.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250827235617.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250827235617.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250828002101.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250828002101.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250830234424.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250830234424.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831194204.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831194204.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195002.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195002.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195134.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195134.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195318.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195318.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195321.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195321.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195324.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195324.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195325.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195325.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195326.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195326.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195327.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195327.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195329.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195329.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195332.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195332.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195333.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195333.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195335.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195335.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195629.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195629.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195632.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195632.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195633.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195633.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195635.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195635.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195654.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195654.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195656.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195656.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195903.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195903.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195936.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195936.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831195938.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831195938.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200014.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200014.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200028.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200028.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200030.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200030.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200248.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200248.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200412.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200412.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200417.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200417.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200422.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200422.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200429.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200429.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200453.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200453.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200457.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200457.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200625.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200625.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200655.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200655.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831200838.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831200838.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831201154.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831201154.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831202508.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831202508.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831202739.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831202739.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831202856.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831202856.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203117.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203117.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203145.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203145.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203219.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203219.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203419.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203419.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203506.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203506.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203509.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203509.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831203537.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831203537.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831204006.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831204006.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831204026.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831204026.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831204219.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831204219.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831204234.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831204234.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831204518.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831204518.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831210157.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831210157.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831210654.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831210654.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831210722.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831210722.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831210740.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831210740.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831211044.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831211044.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831211602.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831211602.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831211618.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831211618.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831211729.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831211729.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831211744.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831211744.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250831223848.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250831223848.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011318.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011318.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011437.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011437.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011504.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011504.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011516.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011516.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011557.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011557.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011629.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011629.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011701.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011701.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011800.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011800.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011828.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011828.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901011843.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901011843.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901012031.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901012031.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901012108.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901012108.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901012158.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901012158.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901013234.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901013234.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901013300.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901013300.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901013309.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901013309.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901014134.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901014134.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901014508.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901014508.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235345.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235345.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235820.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235820.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235832.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235832.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235841.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235841.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235849.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235849.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250901235851.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250901235851.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000024.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000024.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000031.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000031.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000047.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000047.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000201.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000201.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000423.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000423.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000555.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000555.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902000950.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902000950.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902002028.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902002028.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902002056.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902002056.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902002318.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902002318.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250902002340.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250902002340.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905232601.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905232601.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905233552.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905233552.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905233720.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905233720.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905233731.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905233731.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234123.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234123.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234221.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234221.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234255.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234255.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234401.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234401.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234420.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234420.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234541.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234541.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234556.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234556.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234631.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234631.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905234700.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905234700.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235502.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235502.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235515.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235515.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235713.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235713.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235911.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235911.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235916.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235916.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250905235958.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250905235958.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000023.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000023.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000042.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000042.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000100.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000100.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000348.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000348.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000422.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000422.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000438.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000438.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000442.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000442.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906000502.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906000502.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906001014.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906001014.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906001150.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906001150.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906001308.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906001308.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250906001333.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250906001333.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003318.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003318.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003423.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003423.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003510.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003510.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003520.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003520.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003552.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003552.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003639.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003639.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907003653.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907003653.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125538.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125538.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125602.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125602.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125635.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125635.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125716.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125716.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125747.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125747.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907125808.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907125808.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907134457.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907134457.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907134517.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907134517.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180534.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180534.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180616.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180616.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180633.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180633.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180657.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180657.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180733.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180733.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180812.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180812.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180831.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180831.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180837.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180837.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907180845.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907180845.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907181037.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907181037.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907181044.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907181044.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907181059.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907181059.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907181222.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907181222.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907181631.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907181631.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907212522.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907212522.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907212739.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907212739.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907213128.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907213128.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907213206.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907213206.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907213238.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907213238.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907213346.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907213346.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250907213447.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250907213447.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250910001819.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250910001819.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250910001844.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250910001844.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250910002012.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250910002012.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\Pdfs\\Fact-20250910002135.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Fact-20250910002135.pdf"
+    },
+    {
       "Id": "C:\\Users\\Jhoxys\\source\\repos\\CursoMVC2\\CapaAdmin\\wwwroot\\assets\\css\\material-dashboard.css",
       "PackagePath": "staticwebassets\\assets\\css\\material-dashboard.css"
     },

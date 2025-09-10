@@ -34,6 +34,11 @@ namespace CapaAdmin.Models
         [Precision(16, 2)]
         public decimal Price { get; set; }
 
+
+        [Precision(16, 2)]
+        public decimal Debt { get; set; }
+
+
         public DateTime CreatedAt { get; set; }
 
         public List<Billing> Billing { get; set; } = new List<Billing>();

@@ -181,6 +181,7 @@ namespace CapaAdmin.Controllers
                        
             var fa=$"{numero}-{fecha}";
 
+            string siteName = configuration.GetValue<string>("ContactSettings:SiteName") ?? "";// pues solo consigo el telefono 
             string phone = configuration.GetValue<string>("ContactSettings:Phone") ?? "";// pues solo consigo el telefono 
             string Country = configuration.GetValue<string>("ContactSettings:Country") ?? "";
             string State = configuration.GetValue<string>("ContactSettings:State") ?? "";
@@ -196,6 +197,9 @@ namespace CapaAdmin.Controllers
             ViewBag.ITBIS = ITBIS;
             ViewBag.NoFactura = fa;
             ViewBag.ITBISCalculo = ITBISCalculo;
+            ViewBag.SiteName = siteName;
+
+             
             Clients clients = new Clients();
             ViewData["ClientsFirstName"] = clients.FirstName;
             ViewData["Store"] = "Store";
@@ -209,8 +213,6 @@ namespace CapaAdmin.Controllers
             else
             { ViewData["activeProduct"] = "none";
               ViewData["Store"] = "Store";
-
-
             }
             query = query.Where(s =>  s.Stock > 0);// agregamos una consulta de resultados
 
@@ -226,6 +228,8 @@ namespace CapaAdmin.Controllers
         public async Task<IActionResult> Billing(FacturaDto fact)
         {
             decimal totalGeneral = 0;
+
+            string NoFacturaVerific = "";
             decimal ITBValid = 0;
             string ITBIS = configuration.GetValue<string>("ITBISSettings:ITBIS") ?? "";
             decimal ITBISCalculo = configuration.GetValue<decimal>("ITBISSettings:ITBISCalculo");
@@ -234,7 +238,9 @@ namespace CapaAdmin.Controllers
 
         foreach(var item in fact.BillingDto)
                 {
-                   if( item.Quantitys > 0)
+                    ViewBag.SuccessMessage = "Se envio la factura sactifactoriamente! " + item.Debt;
+
+                    if ( item.Quantitys > 0 && NoFacturaVerific != item.NoFactura )
                     {
                         var product = context.Products.Find(item.ProductId);
 
@@ -242,40 +248,40 @@ namespace CapaAdmin.Controllers
                         {
                             // Descontar stock si existe
                             product.Stock -= item.Quantitys;
-                            TempData["Error"] = "Se envio la factura sactifactoriamente!";
+                        
                         }
-                        else
-                        {   
-                   
-                        }
-                        TempData["Error"] = "Se envio la factura sactifactoriamente!"+ item.ProductId;
 
 
+
+                       // TempData["Error"] = "Se envio la factura sactifactoriamente! " + item.Debt;
                         Billing billings = new Billing()
                     {
-                    
                         Description = item.Description,
                         NoFactura =  item.NoFactura,
                         CodeProduct = item.CodeProduct,
                         Discount = item.Discount,
                         ITB = item.ITB,
                         Price = item.Price,
-                        Total = item.Total,
-                        Checks= item.Checks,
+                        Total = item.Price* item.Quantitys,
+                        Debt= item.Checks,
                             Quantity = item.Quantitys,
                         CreatedAt = DateTime.Now      
-                    }; 
+                    };
 
-     
+           
                         context.Billing.Add(billings); //  inserta
 
-                        if ( Convert.ToInt32( item.CodeProduct )<= 0)
+                        if (Convert.ToInt32(item.CodeProduct) <= 0 )
                         {
 
                             Typing Typ = new Typing()
                             {
                                 Name = item.Name,
                                 Price = item.Price,
+                                Quantity = item.Quantitys,  
+                                NoFactura = item.NoFactura,
+                               // Discount = item.Discount,
+                                Total = item.Price * item.Quantitys,
                                 Description = item.Description,
                                 CreatedAt = DateTime.Now
 
@@ -286,13 +292,14 @@ namespace CapaAdmin.Controllers
                         }
 
                     }
+                    NoFacturaVerific += item.NoFactura;
                 }        
                 // Aquí insertas en BD y descontas stock…
 
                 // vcontext.Bil
                 context.SaveChanges();
 
-                ViewBag.SuccessMessage = "Se envio la factura sactifactoriamente!";
+               // ViewBag.SuccessMessage = "Se envio la factura sactifactoriamente!";
                 // validar la fucking licencia 
                 QuestPDF.Settings.License = LicenseType.Community;
                 // // validar la fucking licencia 
@@ -343,20 +350,14 @@ namespace CapaAdmin.Controllers
                                    });
                                   tabla.Header(heather =>
                                      {
-
                                          heather.Cell().Background("#257272").
                                                Padding(2).Text("Producto").FontSize(3).FontColor("#fff").Bold();
-
                                          heather.Cell().Background("#257272").
                                                Padding(2).Text("P/Unid").FontSize(3).FontColor("#fff").Bold();
-
                                          heather.Cell().Background("#257272").
                                                Padding(2).Text("Cant").FontSize(3).FontColor("#fff").Bold();
-
                                          heather.Cell().Background("#257272").
                                                Padding(2).Text("Total").FontSize(3).FontColor("#fff").Bold();
-
-
                                      });
                                   foreach (var item in fact.BillingDto)
                                   {
@@ -374,7 +375,7 @@ namespace CapaAdmin.Controllers
                                           var precio = item.Price;
                                           var total = cantidad * precio;
                                           totalGeneral += total;
-                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(item.Description + " dd " + ITBValid).FontSize(3);
+                                          tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(item.Description).FontSize(3);
                                           tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text(cantidad.ToString()).FontSize(3);
                                           tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).Text($"${precio}").FontSize(3);
                                           tabla.Cell().BorderBottom(0.5f).BorderColor("#D9D9D9").Padding(2).AlignRight().Text($"${total}").FontSize(3);
@@ -453,7 +454,7 @@ namespace CapaAdmin.Controllers
         {
 
 
-
+ 
 
 
 

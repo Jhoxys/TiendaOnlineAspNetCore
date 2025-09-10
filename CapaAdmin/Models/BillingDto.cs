@@ -43,7 +43,10 @@ namespace CapaAdmin.Models
 
 
         [Required]
-        public decimal Checks { get; set; }
+        public decimal  Checks { get; set; }
+
+        [Required]
+        public decimal Debt { get; set; }
 
         [Required]
         public int ProductId { get; set; }

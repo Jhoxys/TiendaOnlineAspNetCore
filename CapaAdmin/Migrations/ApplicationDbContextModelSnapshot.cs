@@ -110,16 +110,16 @@ namespace CapaAdmin.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<decimal>("Checks")
-                        .HasPrecision(16, 2)
-                        .HasColumnType("decimal(16,2)");
-
                     b.Property<string>("CodeProduct")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Debt")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -160,7 +160,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("TypingId");
 
-                    b.ToTable("Billing");
+                    b.ToTable("Billing", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Clients", b =>
@@ -197,7 +197,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Clients", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Inventory", b =>
@@ -253,7 +253,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Inventory");
+                    b.ToTable("Inventory", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
@@ -299,7 +299,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.OrderItem", b =>
@@ -329,7 +329,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OderItems");
+                    b.ToTable("OderItems", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Product", b =>
@@ -381,7 +381,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Typing", b =>
@@ -394,6 +394,10 @@ namespace CapaAdmin.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Debt")
+                        .HasPrecision(16, 2)
+                        .HasColumnType("decimal(16,2)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -431,7 +435,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Typing");
+                    b.ToTable("Typing", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

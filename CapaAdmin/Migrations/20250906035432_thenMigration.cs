@@ -5,24 +5,24 @@
 namespace CapaAdmin.Migrations
 {
     /// <inheritdoc />
-    public partial class addCheks : Migration
+    public partial class thenMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<decimal>(
-                name: "Checks",
+            migrationBuilder.AddColumn<bool>(
+                name: "Debt",
                 table: "Billing",
-                type: "decimal(18,2)",
+                type: "bit",
                 nullable: false,
-                defaultValue: 0m);
+                defaultValue: false);
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Checks",
+                name: "Debt",
                 table: "Billing");
         }
     }
