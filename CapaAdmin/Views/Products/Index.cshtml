@@ -4,8 +4,12 @@
 *@
 @model List<Product>
 @{
+
+    var products2 = ViewBag.Products2 ?? new List<Product>();
     int pageIndex = (int)ViewData["PageIndex"]!; 
+    int pageIndex2 = (int)ViewData["PageIndex2"]!;
     int totalPages = (int)ViewData["TotalPages"]!;
+    int totalPages2 = (int)ViewData["TotalPages2"]!;
     string search = (string)ViewData["Search"]!;
     string column = (string)ViewData["Column"]!;
     string orderBy = (string)ViewData["OrderBy"]!;
@@ -62,6 +66,7 @@
             <th style="cursor: pointer;" onclick="sortTable('Id')">ID @getArrow("Id")</th>
             <th style="cursor: pointer;" onclick="sortTable('Name')">Name @getArrow("Name") </th>
             <th style="cursor: pointer;" onclick="sortTable('Brand')">Brand  @getArrow("Brand") </th>
+            <th style="cursor: pointer;" >Stock </th>
             <th style="cursor: pointer;" onclick="sortTable('Category')">Category @getArrow("Category") </th>
             <th style="cursor: pointer;" onclick="sortTable('Price')">Price @getArrow("Price") </th>
             <th>Image</th>
@@ -78,6 +83,7 @@
                 <td>@product.Id</td>
                 <td>@product.Name</td>
                 <td>@product.Brand</td>
+				<td>@product.Stock</td>
                 <td>@product.Category</td>
                 <td>@(product.Price)</td>
                 <td><img src="/img/@product.ImageFileName" width="100"/></td>
@@ -105,6 +111,70 @@
             <li class="page-item @active"><a class="page-link" asp-route-pageIndex="@i"
                    asp-route-search="@search" asp-route-column="@column" asp-route-orderBy="@orderBy">@i</a>
              </li>
+        }
+    </ul>
+</nav>
+
+
+
+<h2 class="text-center mb-5"> Low stock</h2>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+
+            <th style="cursor: pointer;" onclick="sortTable('Id')">ID @getArrow("Id")</th>
+            <th style="cursor: pointer;" onclick="sortTable('Name')">Name @getArrow("Name") </th>
+            <th style="cursor: pointer;" onclick="sortTable('Brand')">Brand  @getArrow("Brand") </th>
+            <th style="cursor: pointer;">Stock </th>
+            <th style="cursor: pointer;" onclick="sortTable('Category')">Category @getArrow("Category") </th>
+            <th style="cursor: pointer;" onclick="sortTable('Price')">Price @getArrow("Price") </th>
+            <th>Image</th>
+            <th style="cursor: pointer;" onclick="sortTable('CreatedAt')"> Created At @getArrow("CreatedAt")</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var product in products2)
+        {
+            <tr>
+
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Brand</td>
+                <td>@product.Stock</td>
+                <td>@product.Category</td>
+                <td>@(product.Price)</td>
+                <td><img src="/img/@product.ImageFileName" width="100" /></td>
+                <td>@product.CreatedAt.ToString("MM/dd/yyyy") </td>
+
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-controller="Products" asp-action="Edit" asp-route-id="@product.Id">Edit</a>
+
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+
+
+
+
+
+</table>
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= totalPages2; i++)
+        {
+            string active = "";
+            if (i == pageIndex2) active = "active";
+            <li class="page-item @active">
+                <a class="page-link" asp-route-pageIndex2="@i"
+                   asp-route-search="@search" asp-route-column="@column" asp-route-orderBy="@orderBy">@i</a>
+            </li>
         }
     </ul>
 </nav>

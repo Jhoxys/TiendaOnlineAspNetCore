@@ -17,6 +17,10 @@ namespace CapaAdmin.Models
 
         [Required]
         public decimal Price { get; set; }
+
+        [Required]
+        public decimal Stock { get; set; }
+
         [Required]
         public string Description { get; set; } = "";
 

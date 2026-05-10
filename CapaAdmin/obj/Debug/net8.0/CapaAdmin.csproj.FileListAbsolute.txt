@@ -120,11 +120,6 @@ C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\CapaAdmin.Razo
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\CapaAdmin.RazorAssemblyInfo.cs
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets\msbuild.CapaAdmin.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets\msbuild.build.CapaAdmin.props
-C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CapaAdmin.props
-C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CapaAdmin.props
-C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\scopedcss\bundle\CapaAdmin.styles.css
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\scopedcss\projectbundle\CapaAdmin.bundle.scp.css
@@ -191,3 +186,11 @@ C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\bin\Debug\net8.0\runtimes\win-x
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\bin\Debug\net8.0\runtimes\win-x86\native\libstdc++-6.dll
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\bin\Debug\net8.0\runtimes\win-x86\native\libwinpthread-1.dll
 C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\bin\Debug\net8.0\CapaAdmin.staticwebassets.endpoints.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Jhoxys\source\repos\CursoMVC2\CapaAdmin\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

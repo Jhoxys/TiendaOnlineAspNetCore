@@ -2,6 +2,7 @@
 using CapaAdmin.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Linq;
 
@@ -14,6 +15,7 @@ namespace CapaAdmin.Controllers
         private readonly ApplicationDbContext context;
         private readonly IWebHostEnvironment environment;
         private readonly int pageSize = 5;
+        private readonly int pageSize2 = 5;
 
         public ProductsController(ApplicationDbContext context, IWebHostEnvironment environment )
         {
@@ -23,7 +25,7 @@ namespace CapaAdmin.Controllers
 
 
 
-        public IActionResult Index(int pageIndex, string? search, string? column, string? orderBy )
+        public async Task<IActionResult> Index(int pageIndex, int PageIndex2, string? search, string? column, string? orderBy )
         {
             IQueryable<Product> query = context.Products;
             
@@ -126,19 +128,35 @@ namespace CapaAdmin.Controllers
             {
                 pageIndex = 1;
             }
-
             decimal count = query.Count(); // total del numero de paginas
             int totalPages = (int)Math.Ceiling(count / pageSize);
             query = query.Skip((pageIndex - 1) * pageSize).Take(pageSize);
 
             var products = query.ToList();
-                ViewData["PageIndex"]=pageIndex;
-                ViewData["TotalPages"] = totalPages;
+            ViewData["PageIndex"] = pageIndex;
+            ViewData["TotalPages"] = totalPages;
+
+            IQueryable<Product> query2 = context.Products;
+
+            // Pagination functionality
+            if (PageIndex2 < 1)
+            {
+                PageIndex2 = 1;
+            }
+
+            var products2 = await query2.Where(i => i.Stock <= 5).ToListAsync();
+
+            decimal count2 = await query2.CountAsync(); // total del numero de paginas
+            int totalPages2 = (int)Math.Ceiling(count2 / pageSize2);
+            query2 = query2.Skip((PageIndex2 - 1) * pageSize2).Take(pageSize2);
+
+                ViewData["PageIndex2"]= PageIndex2;
+                ViewData["TotalPages2"] = totalPages2;
 
             ViewData["Search"] = search ?? "";
             ViewData["Column"] = column ?? "";
             ViewData["OrderBy"] = orderBy ?? "";
-
+            ViewBag.Products2 = products2;
 
             return View(products);
         }
@@ -181,6 +199,7 @@ namespace CapaAdmin.Controllers
                  Brand = productDto.Brand,
                  Category = productDto.Category,
                  Price = productDto.Price,
+                 Stock = productDto.Stock,
                  Description = productDto.Description,
                  ImageFileName = newFileName,
                  CreatedAt  = DateTime.Now,
@@ -208,6 +227,7 @@ namespace CapaAdmin.Controllers
                 Brand = product.Brand,
                 Category = product.Category,
                 Price = product.Price,
+                Stock = product.Stock,
                 Description = product.Description
             };
 
@@ -265,6 +285,7 @@ namespace CapaAdmin.Controllers
             product.Brand = productDto.Brand;
             product.Category = productDto.Category;
             product.Price = productDto.Price;
+            product.Stock = productDto.Stock;
             product.Description = productDto.Description;
             product.ImageFileName = newFileName;
 

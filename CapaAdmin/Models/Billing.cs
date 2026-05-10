@@ -10,7 +10,15 @@ namespace CapaAdmin.Models
 
         public string Name { get; set; } = "";
 
-     
+        public decimal Checks { get; set; }
+
+        public string NameSeller { get; set; } = "";
+
+        public string Address { get; set; } = "";
+
+        public string AddressSeller { get; set; } = "";
+        public string Phone { get; set; } = "";
+
         public string Description{ get; set; } = "";
 
         public string CodeProduct { get; set; } ="";
@@ -19,7 +27,6 @@ namespace CapaAdmin.Models
         public decimal ITB { get; set; }
 
 
-        [Precision(16, 2)]
         public string NoFactura { get; set; } = "";
 
         [Precision(16, 2)]
@@ -35,9 +42,6 @@ namespace CapaAdmin.Models
 
         [Precision(16, 2)]
         public decimal Debt { get; set; }
-
-
-
 
 
         public int? TypingId { get; set; }// para que acepte null

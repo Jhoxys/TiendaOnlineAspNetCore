@@ -11,6 +11,12 @@
     string search = (string)ViewData["Search"]!;
 
 
+}
+
+@{
+    int pageIndex = (int)ViewData["PageIndex"]!;
+    int totalPages = (int)ViewData["TotalPages"]!;
+
 
 }
 <script>
@@ -36,45 +42,49 @@
 
 
         //const FQty = parseInt(filaClonada.cells[2].textContent);
-        const FPrice = tablaOriginal.querySelector('input[name="Price"]');
+            const FPrice = tablaOriginal.querySelector('.PriceC');
         const FPriceR = parseFloat(FPrice.value);
         FPrice.disabled = false;
-        FPrice.value = 0;
+        FPrice.value = 1;
 
-        const FStock = tablaOriginal.querySelector('input[name="Stock"]');
+            const FStock = tablaOriginal.querySelector('.StockC');
         const FStockR = parseFloat(FStock.value);
         FStock.value = 0 ;
 
-        const FCode = tablaOriginal.querySelector('input[name="CodeProduct"]');
+                const FCode = tablaOriginal.querySelector('.CodeProductC');
         const CodeR = parseFloat(FCode.value);
               FCode.value = 0;
+         const FCName = tablaOriginal.querySelector('.NameC');
 
-         const FCName = tablaOriginal.querySelector('input[name="Name"]');          
-       
 
-        ///nombre cliente
-        const Clients = document.querySelector('input[name="Clients"]');
+            ///nombre cliente
+            const Clients = document.querySelector('.ClientsC');
         const FClients = Clients.value;
 
-
-        if (FClients === "" || CodeR >0) {
-            alert("Please enter the client's name");
-            CNameR = FCName.value;
-
-        } else {
-            CNameR = FClients;
+        // ver
+      if ( CodeR >0) {
+           CNameR = FCName.value;
+                       FCode.value = 0;
           
-        }
+        } else {
+            CNameR = "Digitacion";
+          
+       }
+       // lo que pasa despues de insertar la fila
+                    const FCName2 = tablaOriginal.querySelector('.NameC');
+                            FCName2.value = "Digitacion";
 
-        const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
+
+
+            const FQty = tablaOriginal.querySelector('.QuantitysC');
         const FQtyR = parseFloat(FQty.value);
               FQty.value = 1;
 
-        const FDesc = tablaOriginal.querySelector('input[name="Description"]');
+            const FDesc = tablaOriginal.querySelector('.DescriptionC');
         const FDesction = FDesc.value;
               FDesc.disabled = false;
               FDesc.value = ""; // limpio los campos
-        const Famount = tablaOriginal.querySelector('input[name="amount"]');
+            const Famount = tablaOriginal.querySelector('.amountC');
         const Famountval = parseFloat(Famount.value);
               Famount.value = 0;
         // aqui controlo el itbis
@@ -100,6 +110,14 @@
         const checks = document.querySelector('#checksActiver');
 
         const checksImp = parseFloat(checks.value);
+
+     // controlar que bloque el itb radio bottom
+
+                 document.getElementById("red").disabled = true;
+                  document.getElementById("btn2").disabled = true;
+
+                  
+
         if (FQtyR > 0 && FPriceR > 0) { 
 
      
@@ -124,7 +142,7 @@
                       <td><input class="form-control" name="BillingDto[${index}].CodeProduct" value="${CodeR}" readonly /></td>
                       <td><input class="form-control" id="getClient" name="BillingDto[${index}].Name" value="${CNameR}" readonly /></td>
                       <td><input class="form-control" name="BillingDto[${index}].Stock" value="${FStockR}" readonly /></td>
-                      <td><input class="form-control" name="BillingDto[${index}].Description" value="${FDesction}" readonly  /> </td>
+                      <td><input class="form-control" name="BillingDto[${index}].Description" value="${FDesction}" readonly  required /> </td>
                       <td><input class="form-control" name="BillingDto[${index}].Quantitys"  value="${FQtyR}"  readonly  /></td>
                       <td><input class="form-control" name="BillingDto[${index}].Price"  value="${FPriceR}"  readonly  /></td>
                       <td><input class="form-control" id="ValAmount" name="BillingDto[${index}].amount"  value="${Famountval}" readonly  /></td>
@@ -138,7 +156,7 @@
                         `;
             //    <input name="BillingDto[${index}].ITB" id="TotalITBS" type="hidden" value="${checksImp}" />
 
-
+        
            tablaNueva.appendChild(fila);
 
           //  tablaNueva.appendChild(filaClonada);
@@ -184,8 +202,8 @@ function eliminarFila(boton) {
         const input = tablaOriginal.querySelector('input[type="number"]');
         const valor = parseFloat(input.value);
     
-        // aqui selecionamos precio 
-        const input1 = tablaOriginal.querySelector('input[name="Price"]');
+        // aqui selecionamos precio
+            const input1 = tablaOriginal.querySelector('.PriceC');
         const valor1 = parseFloat(input1.value);
      
         let total = valor1 * valor;
@@ -194,12 +212,12 @@ function eliminarFila(boton) {
             input1.value = 1;
           }
         // aqui le cambiamos el total al monto
-        const input2 = tablaOriginal.querySelector('input[name="amount"]');
-        input2.value = total; 
+            const input2 = tablaOriginal.querySelector('.amountC');
+        input2.value = total;
 
 
 
-        const FQty = tablaOriginal.querySelector('input[name="Quantitys"]');
+            const FQty = tablaOriginal.querySelector('.QuantitysC');
         const FQtyR = parseFloat(FQty.value);
 
        
@@ -235,11 +253,19 @@ function eliminarFila(boton) {
             const li3 = document.querySelector('#AmountTotal');
             let sumaITB = valorli + valorli2;
             // comprobar si esta chek el itbis
-            const checks= document.getElementById("red").checked;
-            if (checks === true) {
-                
-            } else {
+             const checks= document.getElementById("red").checked;
+             const checks2= document.getElementById("btn2").checked;
 
+            if (checks == true) {
+                        document.getElementById("checksActiver").value="1";
+
+
+             } 
+             
+            if (checks2 == true){
+            document.getElementById("checksActiver").value="0";
+
+      
                 sumaITB = valorli;
             }
 
@@ -286,27 +312,27 @@ function eliminarFila(boton) {
 
 
         //rellenar tabla con producto;
-        const FName = filaOriginal.querySelector('input[name="Name"]');
+        const FName = filaOriginal.querySelector('.NameC');
               FName.value = filaOriginalDos.cells[0].textContent;
-       
-        const FPrice = filaOriginal.querySelector('input[name="Price"]');
+
+            const FPrice = filaOriginal.querySelector('.PriceC');
               FPrice.value = preciVal;
               FPrice.disabled = true;
 
-        const FQty = filaOriginal.querySelector('input[name="Quantitys"]');
+            const FQty = filaOriginal.querySelector('.QuantitysC');
               FQty.value = 1;
         FQty.max = filaOriginalDos.cells[5].textContent; // Set max quantity based on stock
        // max = "10"
 
-        const FCode = filaOriginal.querySelector('input[name="CodeProduct"]');
+                const FCode = filaOriginal.querySelector('.CodeProductC');
         FCode.value = filaOriginalDos.cells[9].textContent;
 
 
-        const FDesc = filaOriginal.querySelector('input[name="Description"]');
+            const FDesc = filaOriginal.querySelector('.DescriptionC');
               FDesc.value = filaOriginalDos.cells[7].textContent;
               FDesc.disabled = true;
 
-        const FStock = filaOriginal.querySelector('input[name="Stock"]');
+            const FStock = filaOriginal.querySelector('.StockC');
               FStock.value = filaOriginalDos.cells[5].textContent;
 
 
@@ -344,22 +370,59 @@ function eliminarFila(boton) {
     }
 
     function DebtUser(check) {
+        var inputs = document.querySelector('#SpentInput input');
+
+        inputs.disabled = true;
 
         if (check.checked) {
             check.value = true;
             document.getElementById("DebtActiver").value = 1;
-            console.log("✔️ Marcado (true)");
+            document.getElementById("BillingTitle").innerHTML = "<span class='text-danger'>Account to Pay</span>";
+						
         } else {
+            inputs.disabled = false;
             document.getElementById("DebtActiver").value = 0;
-            check.value = false; console.log("❌ No marcado (false)");
+            document.getElementById("BillingTitle").innerHTML = "Billing";
+            check.value = false; 
         }
 
     }
 
+    function SpenttUser(check) {
+        var inputs = document.querySelector('#DebtInput input');
+        inputs.disabled = true;
+
+        if (check.checked) {
+            check.value = true;
+            document.getElementById("DebtActiver").value = 2;
+            document.getElementById("BillingTitle").innerHTML = " <span class='text-danger'>Spent to Pay</span>";
+            document.getElementById
+
+        } else {
+            inputs.disabled = false;
+            document.getElementById("DebtActiver").value = 0;
+            document.getElementById("BillingTitle").innerHTML = "Billing";
+            check.value = false; 
+        }
+
+    }
+
+
+
 </script>
+
+
+
+
+
 <section class="w-100 p-4 justify-content-center">
+    <div class="">
+          <div class="row">
+    
+            <div class="col-xl-8">
+
     <div class="card">
-        <p>Ruta PDF: @ViewBag.PdfPath</p>
+        @* <p>Ruta PDF: @ViewBag.PdfPath</p> *@
 
         <div class="card-body">
             <div class="container mb-5 mt-3">
@@ -382,30 +445,49 @@ function eliminarFila(boton) {
                         <div class="text-center">
                             <i class="fab bg-gradient-faded-info fa-4x ms-0" style="color:#5d9fc5 ;"></i>
                             <h2 style="color:#5d9fc5 ;">@ViewBag.SiteName</h2>
-                            <h1 >Billing</h1>
+                            <h1 id="BillingTitle">Billing</h1>
                         </div>
 
                     </div>
                     <form method="post" id="formPrinc">
-                      
+
+                        <input name="BillingDto[0].ITB" id="TotalITBS" type="hidden" />
+                        <input name="BillingDto[0].NoFactura" value="0" type="hidden" />
+
+                        <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
+                        <input id="DebtActiver" name="DebtType" value="0" type="hidden" />
+                        <input id="checksActiver" name="BillingDto[0].Checks" value="0" type="hidden" />
                         
-                        @if (ViewBag.SuccessMessage != null)
+                        @if (ViewBag.SuccessMessage != null   || TempData["SuccessMessage"] != null)
                         {
                             <button type="submit" class="btn btn-danger text-capitalize " onclick="printPDF(this)" asp-action="Billing" asp-controller="Accounting" role="button">
                                 Imprimir
                             </button>
                             <a class="btn btn-warning text-capitalize m-auto  float-end" asp-action="Billing" asp-controller="Accounting">
                                     Otra   Factura
-                             </a>                           
+                            </a>
                         }
                         else
                         {
-                         <div class="form-check form-switch float-end">
-                                <input class="form-check-input" type="checkbox"  onchange="DebtUser(this)" />
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Account to pay</label>
-                        </div>
-                        }
 
+                            <div class="row">
+                             	<label class="me-1 fw-bold">Select Type of Bill</label>
+                           
+                                <div class="form-check form-switch float-end" id="DebtInput">
+                                    <input id="DebtCheck" class="form-check-input" type="checkbox" onclick="DebtUser(this)" />
+                                    <label class="form-check-label" for="DebtCheck">Account to pay</label>
+                                </div>
+
+                                <div class="form-check form-switch float-end" id="SpentInput">
+                                                <input id="SpentCheck" class="form-check-input" type="checkbox" onclick="SpenttUser(this)" />
+                                    <label class="form-check-label" for="SpentCheck">Spent to pay</label>
+                                </div>
+                             </div>
+                            @* <i nput id="Activer" type="hidden" name="BillingDto[0].Checks" value="0">
+                            <input id="DebtActiver" type="hidden" name="BillingDto[0].Debt" value="0">
+ *@
+                        }
+                       
                         @if (ViewBag.ErrorMessage != null)
                     {
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -420,6 +502,7 @@ function eliminarFila(boton) {
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         }
+                        <div class="@ViewBag.DesableArea">
                     @using Microsoft.AspNetCore.Identity
                     @inject SignInManager<ApplicationUser> SignInManager
                     @inject UserManager<ApplicationUser> UserManager
@@ -431,18 +514,20 @@ function eliminarFila(boton) {
                                 <div class="col-xl-8">
                                     <ul class="list-unstyled">
                                     <li class="text-muted">Vendedor: <span style="color:#5d9fc5 ;"> @appUser.FirstName  @appUser.LastName </span></li>
+                                          @* <input class="form-control" hidden asp-for="BillingDto[0].Name2" value="@appUser.FirstName  @appUser.LastName" /> *@
+
                                         <li class="text-muted">@ViewBag.Street, @ViewBag.City</li>
                                         <li class="text-muted">@ViewBag.State, @ViewBag.Country</li>
                                     <li class="text-muted"><i class="fas fa-phone"></i> @ViewBag.Phone</li>
                             </ul>
                                     <label class="me-1 fw-bold">Name Client</label>
-                                    <input class="form-control" placeholder="Name Client" name="Clients" asp-for="BillingDto[0].Name" required />
-                                    <span asp-validation-for="@ViewData["ClientsFirstName"]"></span>
+                                                    <input class="form-control ClientsC" placeholder="Name Client" asp-for="BillingDto[1].NameSeller" required />
+                              
                                     <label class="me-1 fw-bold">Address</label>
-                                    <input class="form-control" placeholder="Adress" asp-for="@ViewData["ClientsFirstName"]" />
+                                                    <input class="form-control" placeholder="Adress" asp-for="BillingDto[1].AddressSeller" />
                                     <label class="me-1 fw-bold">Phone</label>
-                                    <input class="form-control" placeholder="Phone" asp-for="@ViewData["ClientsFirstName"]" />              
-                                    <br />
+                                                    <input class="form-control" placeholder="Phone" asp-for="BillingDto[1].Phone" />
+                                                    <br />
                         </div>
                             }
 
@@ -457,7 +542,7 @@ function eliminarFila(boton) {
                             <p class="text-muted">Invoice</p>
                             <ul class="list-unstyled">
                                     <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">ID:</span>#@ViewBag.NoFactura</li>
-                                <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">Creation Date: </span>Jun 23,2021</li>
+                                                    <li class="text-muted"><i class="fas fa-circle" style="color:#84B0CA ;"></i> <span class="fw-bold">Creation Date: </span>@ViewBag.CreaAt</li>
                                 <li class="text-muted">
                                     <i class="fas fa-circle" style="color:#84B0CA;"></i> <span class="me-1 fw-bold">Status:</span><span class="badge bg-warning text-black fw-bold">
                                         Unpaid
@@ -487,13 +572,13 @@ function eliminarFila(boton) {
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                        <td><input class="form-control" name="CodeProduct" placeholder="" asp-for="BillingDto[0].CodeProduct" value="0" readonly /> </td>
-                                        <td><input class="form-control" name="Name" placeholder="Digitacion" asp-for="BillingDto[0].Name" value="Digitacion" readonly /> </td>
-                                        <td><input class="form-control" name="Stock" value="0" readonly /> </td>
-                                        <td><input class="form-control" name="Description" placeholder="Description" asp-for="BillingDto[0].Description" /> </td>
-                                        <td><input class="form-control" name="Quantitys" placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" min="1"  required  /></td>
-                                        <td><input class="form-control" name="Price" placeholder="Price" onchange="CambCantidad()" asp-for="BillingDto[0].Price" min="1" required /></td>
-                                        <td><input class="form-control" id="ValAmount" value="0"  name="amount" placeholder="Amount" asp-for="BillingDto[0].amount"  disabled /></td>
+                                                        <td><input class="form-control CodeProductC"  asp-for="BillingDto[0].CodeProduct" value="0" readonly /> </td>
+                                        <td><input class="form-control NameC" placeholder="Digitacion" asp-for="BillingDto[0].Name"  readonly /> </td>
+                                        <td><input class="form-control StockC"  value="0" readonly /> </td>
+                                        <td><input class="form-control DescriptionC"  placeholder="Description" asp-for="BillingDto[0].Description"  /> </td>
+                                        <td><input class="form-control QuantitysC"  placeholder="Quantity" onchange="CambCantidad()" asp-for="BillingDto[0].Quantitys" min="1"  required  /></td>
+                                        <td><input class="form-control PriceC" placeholder="Price" onchange="CambCantidad()" asp-for="BillingDto[0].Price" min="1" required /></td>
+                                        <td><input class="form-control amountC" id="ValAmount" value="0"   placeholder="Amount" asp-for="BillingDto[0].amount"  disabled /></td>
                                     <td>
                                         <button type="button" onclick="Agregar()" class="btn btn-success text-capitalize active" aria-pressed="true">
                                             Agregar
@@ -529,13 +614,13 @@ function eliminarFila(boton) {
                                     <li class="text-muted ms-3 mt-2" id="ITBTotal"><span class="text-black me-4">ITB(@ViewBag.ITBIS%)</span></li>
                                 <div class="container-fluid" >
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="red" onchange="CambCantidad()">
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="red" onclick="CambCantidad()">
                                             <label class="form-check-label" for="flexRadioDefault1" value="1">
                                                 Apply
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onchange="CambCantidad()" checked>
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="btn2" onclick="CambCantidad()" checked>
                                             <label class="form-check-label" for="flexRadioDefault2" value="0">
                                                Dont Apply
                                             </label>
@@ -552,15 +637,9 @@ function eliminarFila(boton) {
                             <p>Thank you for your purchase</p>
                         </div>
                         <div class="col-xl-2">
-                          
-                               <input name="BillingDto[0].ITB" id="TotalITBS" type="hidden" />
-                               <input name="BillingDto[0].NoFactura" value="0" type="hidden" />
-
-                                <input id="AmountTotalBase" name="BillingDto[0].Total" value="0" type="hidden" />
-
-                                <input id="checksActiver" type="hidden" name="BillingDto[0].Checks" value="0" >
-                                <input id="Activer" type="hidden" name="BillingDto[0].Checks" value="0">
-                                <input id="DebtActiver" type="hidden" name="BillingDto[0].Debt" value="0">
+                         
+                                @* <input id="Activer" name="BillingDto[0].Checks" value="0"> type="hidden" *@
+                             
 
                                 @if (ViewBag.SuccessMessage != null)
                                     {
@@ -577,9 +656,12 @@ function eliminarFila(boton) {
            
 
                         </div>
-                    </div>
+                                        </div>
+                             
+                                     
                          </form>
-                    <div class="mb-3" id="ArtControl" style="display:@ViewData["activeProduct"]">
+                          
+                         <div class="mb-3" id="ArtControl" style="display:@ViewData["activeProduct"]">
                         <label for="recipient-name" class="h1">Store Product:</label>
 
                         <div class="col">
@@ -640,7 +722,7 @@ function eliminarFila(boton) {
                         </div>
 
 
-
+                    </div>
                     </div>
 
                 </div>
@@ -648,4 +730,121 @@ function eliminarFila(boton) {
                
         </div>
     </div>
+    </div>
+        <div class="col-xl-4">
+
+            <div class="card">
+				<div class="card-body">
+                <h6 class="mb-1">Facturas Generadas</h6>
+                <div class="text-muted small mb-3">Historial de facturas y métodos de pago</div>
+
+                <!-- Ejemplo de factura (luego lo pones con foreach) -->
+                    @foreach (var factura in ViewBag.Facturas)
+                    {
+                        <form method="post" asp-action="DescargarPDF" >
+                        <div class="invoice-card p-3 mb-3">
+                  
+                                <input class="form-control"  asp-for="BillingDto[0].NoFactura"  value="@factura.NoFactura" hidden />
+                                @* <input class="form-control" name="NoFactura" value="@factura.NoFactura" hidden /> *@
+
+
+                            <button type="submit" class="btn btn-link p-0 m-0" style="font-size: 20px;">
+                                <i class="fas fa-print"></i>
+                                imprimir
+                            </button>
+                                @if (factura.Debt[0] == 1)
+                                {
+                               <h5> <span class="text-danger">Account to Pay</span></h5>
+                            
+                                    
+                                }
+                                @if (factura.Debt[0] == 2)
+                                {
+                                    <h5> <span class="text-danger">Spent to Pay</span></h5>
+                               
+                                }
+                            <div class="d-flex align-items-start justify-content-between">
+                                <div>
+                                        <div class="invoice-title"> @factura.NameSeller </div>
+                                    @* <div class="text-muted small">Telefono • @factura.Phone</div> *@
+                                        <div class="text-muted small">@factura.CreatedAt.ToString("g")</div>
+                                </div>
+                                   
+                                  
+                                <div class="text-end">
+                                        @{
+											decimal TotalAndITB = 0;
+                                            var calITB = (Convert.ToDecimal(ViewBag.ITBISCalculo) * factura.Totalitys );
+                                            if (factura.Checks >= 1)
+                                            {
+                                                TotalAndITB = (factura.Totalitys + calITB);
+                                            }else {
+                                                TotalAndITB = factura.Totalitys;
+											}
+                       
+                                            <div class="invoice-amount">@TotalAndITB.ToString("N2")</div>
+
+                                        }
+                                    <div class="text-muted small">
+                                          
+                                            @if (factura.Checks >= 1)
+                                                {  
+                                               
+                                                <span class="text-bold"> ITBIS: </span>
+                                              
+                                                @calITB.ToString("N2");
+
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-danger">No ITBIS</span>
+                                                }
+
+                                            
+                                    </div>
+                                   
+                                    <div class="mt-2">
+                                        <span class="pill">
+                                            <i class="bi bi-wallet2"></i> Efectivo
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Inputs -->
+                        <input type="hidden" name="NoFactura" value="@factura.NoFactura" />
+                        @* <input type="hidden" name="Phone" value="@factura.Phone" /> *@
+                        <input type="hidden" name="CreatedAt" value="@factura.CreatedAt" />
+                            <input type="hidden" name="Total" value="@( Convert.ToDecimal(ViewBag.ITBIS) * factura.Totalitys ))" />
+                            <input type="hidden" name="ITB" value="@( Convert.ToDecimal(ViewBag.ITBIS) * factura.Totalitys ))" />
+                        @* <input type="hidden" name="MetodoPago" value="@factura.MetodoPago" /> *@
+
+                    </form>
+
+
+                }
+                    <nav aria-label="Menu pagination">
+                        <ul class="pagination">
+                            @for (int i = 1; i <= totalPages; i++)
+                            {
+                                var active = i == pageIndex ? "active" : "";
+                                <li class="page-item @active">
+                                    <a class="page-link"
+                                       asp-route-pageIndex="@i"
+                                     >@i</a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+
+
+
+                <!-- Más .invoice-card con foreach -->
+            </div>
+            </div>
+
+
+    </div>
+ 
 </section>

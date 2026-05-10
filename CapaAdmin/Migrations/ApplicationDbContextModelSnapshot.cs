@@ -110,6 +110,17 @@ namespace CapaAdmin.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AddressSeller")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Checks")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("CodeProduct")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -137,9 +148,16 @@ namespace CapaAdmin.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("NameSeller")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NoFactura")
                         .IsRequired()
-                        .HasPrecision(16, 2)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -160,7 +178,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("TypingId");
 
-                    b.ToTable("Billing", (string)null);
+                    b.ToTable("Billing");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Clients", b =>
@@ -197,7 +215,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Clients", (string)null);
+                    b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Inventory", b =>
@@ -253,7 +271,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("BillingId");
 
-                    b.ToTable("Inventory", (string)null);
+                    b.ToTable("Inventory");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Order", b =>
@@ -299,7 +317,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ClientId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.OrderItem", b =>
@@ -329,7 +347,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OderItems", (string)null);
+                    b.ToTable("OderItems");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Product", b =>
@@ -381,7 +399,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("CapaAdmin.Models.Typing", b =>
@@ -435,7 +453,7 @@ namespace CapaAdmin.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Typing", (string)null);
+                    b.ToTable("Typing");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
